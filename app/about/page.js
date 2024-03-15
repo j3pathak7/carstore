@@ -14,11 +14,12 @@ function About() {
             <div className="lg:w-1/2 p-4 flex flex-col justify-center space-y-5 my-5">
               <h1 className="text-3xl font-semibold text-teal-800">About Us</h1>
               <p className="leading-relaxed">
-                Welcome to our luxurious hotel, where comfort meets elegance.
-                Indulge in our spacious and cozy rooms, designed to provide
-                ultimate relaxation. Delight your taste buds with our exquisite
-                culinary offerings, accompanied by impeccable service that will
-                exceed your expectations.
+                Welcome to The Car Store, your premier destination for quality
+                pre-owned cars that are next to new at the most affordable
+                prices. At The Car Store, we redefine the concept of pre-owned
+                cars by providing you with vehicles that are meticulously
+                inspected, refurbished, and maintained to ensure they meet the
+                highest standards of quality and reliability.
               </p>
               <Link
                 href="/about"

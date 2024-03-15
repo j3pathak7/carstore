@@ -1,8 +1,8 @@
-import Image from "next/image";
 import HeroSlider from "./components/HeroSlider";
 import AboutUs from "./components/AboutUs";
 import CarCards from "./components/CarCardAll";
 import Address from "./components/Address";
+import SoldCars from "./components/SoldCars";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
         <Address />
         {/* <AboutUs /> */}
         <CarCards />
+        <SoldCars />
       </div>
     </main>
   );
