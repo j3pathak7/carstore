@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "@/app/style/HeroSlider.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -39,6 +39,17 @@ const HeroSlider = () => {
     const nextSlideIndex = (currentSlide + 1) % slides.length;
     setCurrentSlide(nextSlideIndex);
   };
+
+  const nextButtonRef = useRef(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      // Simulate click on the next button
+      nextButtonRef.current.click();
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [currentSlide]); // Reset timer whenever currentSlide changes
 
   return (
     <div className="hero-slider">
@@ -82,6 +93,7 @@ const HeroSlider = () => {
                     ❮
                   </button>
                   <button
+                    ref={nextButtonRef}
                     className="btn btn-controll rounded-none mr-3 text-white"
                     onClick={goToNextSlide}
                   >

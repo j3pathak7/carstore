@@ -83,6 +83,14 @@ function NavBar() {
             {contact}Contact
           </Link>
         </li>
+        <li>
+          <Link
+            href="/reviews"
+            className="hover:scale-105 duration-150 flex items-center gap-2"
+          >
+            {contact}Reviews
+          </Link>
+        </li>
       </ul>
 
       <div onClick={toggleSideBar} className="lg:hidden">
@@ -115,6 +123,14 @@ function NavBar() {
               className="hover:scale-105 duration-150 flex items-center gap-2"
             >
               {contact}Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/reviews"
+              className="hover:scale-105 duration-150 flex items-center gap-2"
+            >
+              {contact}Reviews
             </Link>
           </li>
         </ul>

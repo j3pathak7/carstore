@@ -2,12 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import Address from "../components/Address";
+import HeroSlider from "../components/HeroSlider";
 
 function About() {
   const angle = <AiOutlineDoubleRight className="inline" />;
 
   return (
     <div>
+      <HeroSlider />
       <section className="h-screen flex flex-col justify-center items-cente bg-white">
         <div className="container mx-auto">
           <div className="lg:h-[25rem] flex flex-col lg:flex-row">

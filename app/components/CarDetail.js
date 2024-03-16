@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const CarDetailCard = ({ carDetails }) => {
+const CarDetailCard = ({ carDetails, onGoBack }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [otherImages, setOtherImages] = useState([]);
 
@@ -23,7 +23,7 @@ const CarDetailCard = ({ carDetails }) => {
       {/* Image div and horizontal scroll */}
       <div className="w-full md:w-2/3 flex flex-col items-center">
         {/* Image div outside the card */}
-        <div className="w-full md:w-2/3 md:h-96 mb-2 md:mr-8 md:mb-0">
+        <div className="w-full md:w-2/3 md:h-96 mb-2 md:mb-0">
           {selectedImage && (
             <img
               src={selectedImage}
@@ -50,7 +50,7 @@ const CarDetailCard = ({ carDetails }) => {
         </div>
       </div>
       {/* Car details card */}
-      <div className="w-full md:w-1/2 bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 perspective-1000">
+      <div className="w-full md:w-1/2 bg-white shadow-md rounded-lg overflow-hidden ">
         {/* Car details inside the card */}
         <div className="p-4">
           <h1 className="text-lg font-bold mb-2">Car Details</h1>
@@ -76,6 +76,10 @@ const CarDetailCard = ({ carDetails }) => {
           ) : (
             <p>Loading...</p>
           )}
+          {/* Go back button */}
+          <button onClick={onGoBack} className="mt-4 btn mb-4">
+            Go Back
+          </button>
         </div>
       </div>
     </div>
