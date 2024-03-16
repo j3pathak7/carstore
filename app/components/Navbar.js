@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import {
@@ -43,9 +44,16 @@ function NavBar() {
       <div className="self-center flex gap-2">
         <Link
           href="/"
-          className="self-center font-semibold text-lg lg:text-xl text-teal-800"
+          className="self-center font-semibold text-lg lg:text-xl text-teal-800 flex items-center"
         >
-          the Car Store
+          <Image
+            src="/navLogo.jpeg"
+            width={50}
+            height={50}
+            alt="Picture of the author"
+            className="p-2"
+          />
+          THE CAR STORE
         </Link>
       </div>
 
