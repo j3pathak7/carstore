@@ -69,7 +69,7 @@ const SoldCars = () => {
                 <img
                   src={car.imageUrls}
                   alt={`Car ${car.id}`}
-                  className="m-auto h-48 md:h-96" // Set height to 48px (300px)
+                  className="m-auto h-60 md:h-96" // Set height to 48px (300px)
                 />
               </li>
             ))}
