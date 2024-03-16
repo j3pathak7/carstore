@@ -69,7 +69,7 @@ const SoldCars = () => {
                 <img
                   src={car.imageUrls}
                   alt={`Car ${car.id}`}
-                  className="m-auto h-full md:h-96" // Set height to 48px (300px)
+                  className="m-auto h-48 md:h-96" // Set height to 48px (300px)
                 />
               </li>
             ))}
@@ -123,7 +123,6 @@ const SoldCars = () => {
           </button>
         </div>
       </div>
-      {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script> */}
     </div>
   );
 };
