@@ -7,9 +7,9 @@ const CarCard = ({ car }) => {
       <div>
         {/* Image div starts */}
         {car.imageUrls && car.imageUrls.length > 0 && (
-          <div className="h-80 overflow-hidden rounded-md mb-2">
+          <div className="h-40  md:h-36 lg:h-56 overflow-hidden rounded-md mb-2">
             <img
-              src={car.imageUrls[0]}
+              src={car.imageUrls[1]}
               alt="Car"
               loading="lazy"
               className="w-full object-contain"

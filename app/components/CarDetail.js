@@ -12,7 +12,7 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
       setSelectedImage(carDetails.imageUrls[0]);
 
       // Defer loading other images
-      setOtherImages(carDetails.imageUrls.slice(1));
+      setOtherImages(carDetails.imageUrls.slice(0));
     }
   }, [carDetails]);
 
