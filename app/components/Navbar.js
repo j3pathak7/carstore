@@ -82,7 +82,7 @@ function NavBar() {
       </div>
 
       <div
-        className={`block lg:hidden absolute right-0 top-10 ${sideBarWidth} h-screen overflow-y-hidden bg-purple-50 duration-300`}
+        className={`block lg:hidden absolute right-0 top-10 ${sideBarWidth} h-screen overflow-y-hidden bg-gray-50 duration-300`}
       >
         <ul className="self-center space-y-8 [&>*]:p-2 py-10 px-3">
           <li>
