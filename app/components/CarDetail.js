@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const CarDetailCard = ({ carDetails }) => {
-  const [selectedImage, setSelectedImage] = useState(
-    carDetails && carDetails.imageUrls && carDetails.imageUrls.length > 0
-      ? carDetails.imageUrls[0]
-      : null
-  );
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [otherImages, setOtherImages] = useState([]);
+
+  useEffect(() => {
+    if (carDetails && carDetails.imageUrls && carDetails.imageUrls.length > 0) {
+      // Load the selected image immediately
+      setSelectedImage(carDetails.imageUrls[0]);
+
+      // Defer loading other images
+      setOtherImages(carDetails.imageUrls.slice(1));
+    }
+  }, [carDetails]);
 
   const handleImageClick = (url) => {
     setSelectedImage(url);
@@ -13,17 +20,37 @@ const CarDetailCard = ({ carDetails }) => {
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-center m-10">
-      {/* Image div outside the card */}
-      <div className="w-full md:w-1/2 h-96 bg-gray-200 mb-4 md:mr-8 md:mb-0">
-        {selectedImage && (
-          <img
-            src={selectedImage}
-            alt="Car"
-            className="w-full h-full object-cover"
-          />
-        )}
+      {/* Image div and horizontal scroll */}
+      <div className="w-full md:w-2/3 flex flex-col items-center">
+        {/* Image div outside the card */}
+        <div className="w-full md:w-2/3 md:h-96 mb-2 md:mr-8 md:mb-0">
+          {selectedImage && (
+            <img
+              src={selectedImage}
+              alt="Car"
+              className="w-full h-full object-cover md:object-contain"
+            />
+          )}
+        </div>
+        {/* Display other images with horizontal scroll */}
+        <div className="w-full md:w-96 bg-white shadow-md rounded-lg overflow-x-auto p-4">
+          {otherImages.length > 0 && (
+            <div className="flex space-x-4">
+              {otherImages.map((url, index) => (
+                <img
+                  key={index}
+                  src={url}
+                  alt={`Car ${index + 2}`}
+                  className="w-24 h-24 object-cover rounded-lg cursor-pointer"
+                  onClick={() => handleImageClick(url)}
+                />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-      <div className="w-full md:w-96 bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 perspective-1000 flex flex-col">
+      {/* Car details card */}
+      <div className="w-full md:w-1/2 bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 perspective-1000">
         {/* Car details inside the card */}
         <div className="p-4">
           <h1 className="text-lg font-bold mb-2">Car Details</h1>
@@ -49,26 +76,6 @@ const CarDetailCard = ({ carDetails }) => {
           ) : (
             <p>Loading...</p>
           )}
-        </div>
-        {/* Display other images with horizontal scroll */}
-        <div className="overflow-x-auto p-4">
-          {carDetails &&
-            carDetails.imageUrls &&
-            carDetails.imageUrls.length > 1 && (
-              <div className="flex space-x-4">
-                {carDetails.imageUrls.map((url, index) => (
-                  <img
-                    key={index}
-                    src={url}
-                    alt={`Car ${index + 1}`}
-                    className={`w-24 h-24 object-cover rounded-lg cursor-pointer ${
-                      selectedImage === url ? "border-2 border-blue-500" : ""
-                    }`}
-                    onClick={() => handleImageClick(url)}
-                  />
-                ))}
-              </div>
-            )}
         </div>
       </div>
     </div>
