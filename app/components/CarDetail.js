@@ -1,4 +1,6 @@
+"use client";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 const CarDetailCard = ({ carDetails, onGoBack }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -77,9 +79,9 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
             <p>Loading...</p>
           )}
           {/* Go back button */}
-          <button onClick={onGoBack} className="mt-4 btn mb-4">
+          <Link href="/viewCars" className="btn my-4 w-1/2 mx-auto">
             Go Back
-          </button>
+          </Link>
         </div>
       </div>
     </div>
