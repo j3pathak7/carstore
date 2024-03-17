@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGasPump } from "react-icons/fa";
 import Link from "next/link"; // Importing the Link component from Next.js
+import Image from "next/image";
 
 const HorizontalScrollCard = ({ car }) => {
   return (
@@ -11,8 +12,10 @@ const HorizontalScrollCard = ({ car }) => {
     >
       {/* Image Section */}
       {car.imageUrls && car.imageUrls.length > 0 && (
-        <img
-          src={car.imageUrls[1]} // Displaying the second image from the imageUrls array
+        <Image
+          src={car.imageUrls[1]}
+          width={200} // Displaying the second image from the imageUrls array
+          height={200}
           alt="Car"
           className="w-36 h-auto object-contain mr-4" // Setting width to 36px and allowing the image to contain within its container
         />
