@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const CarCard = ({ car }) => {
   return (
@@ -8,10 +9,12 @@ const CarCard = ({ car }) => {
         {/* Image div starts */}
         {car.imageUrls && car.imageUrls.length > 0 && (
           <div className="h-40  md:h-36 lg:h-56 overflow-hidden rounded-md mb-2">
-            <img
+            <Image
               src={car.imageUrls[1]}
               alt="Car"
               loading="lazy"
+              width={500}
+              height={500}
               className="w-full object-contain"
             />
           </div>

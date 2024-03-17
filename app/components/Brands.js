@@ -35,14 +35,12 @@ const Brands = () => {
             key={index}
             className="border p-2 sm:p-4 flex justify-center items-center border-teal-200"
           >
-            <Link href={`/brands/${brand.name}`}>
-              <Image
-                src={`/Brands/${brand.name}.png`}
-                width={500}
-                height={500}
-                alt={brand.alt}
-              />
-            </Link>
+            <Image
+              src={`/Brands/${brand.name}.png`}
+              width={500}
+              height={500}
+              alt={brand.alt}
+            />
           </div>
         ))}
       </div>

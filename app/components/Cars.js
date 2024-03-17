@@ -7,9 +7,8 @@ import ReactPaginate from "react-paginate";
 
 const Cars = () => {
   const [carList, setCarList] = useState([]);
-  const [carBrands, setCarBrands] = useState([]);
-  const [showFilter, setShowFilter] = useState(false); // State to control filter visibility
-  const [showSort, setShowSort] = useState(false); // State to control sort visibility
+  const [showFilter, setShowFilter] = useState(false);
+  const [showSort, setShowSort] = useState(false);
 
   const [filteredBrand, setFilteredBrand] = useState(null);
   const [filteredTransmission, setFilteredTransmission] = useState(null);
@@ -23,7 +22,6 @@ const Cars = () => {
         const carCollectionRef = collection(db, "cars");
         let carQuery = query(carCollectionRef);
 
-        // Apply filtering by car brand and transmission
         if (filteredBrand && filteredTransmission) {
           carQuery = query(
             carCollectionRef,
@@ -42,7 +40,6 @@ const Cars = () => {
           );
         }
 
-        // Apply sorting by price
         if (sortByPrice) {
           carQuery = query(carQuery, orderBy("price", sortByPrice));
         }
@@ -65,24 +62,36 @@ const Cars = () => {
 
   const changePage = ({ selected }) => {
     setPageNumber(selected);
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0);
   };
 
   const handleBrandFilterChange = (event) => {
     setFilteredBrand(event.target.value);
-    setPageNumber(0); // Reset page number when filter changes
+    setPageNumber(0);
   };
 
   const handleTransmissionFilterChange = (event) => {
     const selectedTransmission = event.target.value;
     setFilteredTransmission(selectedTransmission);
-    setPageNumber(0); // Reset page number when filter changes
+    setPageNumber(0);
   };
 
   const handlePriceSortChange = (event) => {
     setSortByPrice(event.target.value);
-    setPageNumber(0); // Reset page number when sort changes
+    setPageNumber(0);
   };
+
+  const resetFilters = () => {
+    setFilteredBrand(null);
+    setFilteredTransmission(null);
+    setSortByPrice(null);
+    setPageNumber(0);
+  };
+
+  const showNoCarsMessage =
+    filteredBrand !== null ||
+    filteredTransmission !== null ||
+    sortByPrice !== null;
 
   return (
     <div className="container mx-auto p-8 text-teal-800">
@@ -102,7 +111,6 @@ const Cars = () => {
             Sort
           </button>
         </div>
-        {/* Filter and Sort options go here */}
         {showFilter && (
           <div className="flex flex-wrap gap-4 justify-center">
             <div className="m-4">
@@ -120,7 +128,6 @@ const Cars = () => {
                 <option value="Maruti">Maruti</option>
                 <option value="Hyundai">Hyundai</option>
                 <option value="Ford">Ford</option>
-                ))
               </select>
             </div>
             <div className="mb-4 md:m-4">
@@ -158,6 +165,19 @@ const Cars = () => {
           </div>
         )}
       </div>
+      {showNoCarsMessage && carList.length === 0 && (
+        <div className="m-8">
+          <p className="text-red-600 text-center mx-8">
+            Sorry, we couldn't find any cars as per your filters. Would you like
+            to adjust your criteria or explore other options?
+          </p>
+          <div className="flex justify-center m-8">
+            <button className="btn" onClick={resetFilters}>
+              Reset Filters
+            </button>
+          </div>
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {carList
           .slice(pageNumber * carsPerPage, (pageNumber + 1) * carsPerPage)

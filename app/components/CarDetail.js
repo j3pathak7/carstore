@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const CarDetailCard = ({ carDetails, onGoBack }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -27,10 +28,13 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
         {/* Image div outside the card */}
         <div className="w-full md:w-2/3 md:h-96 mb-2 md:mb-0">
           {selectedImage && (
-            <img
+            <Image
               src={selectedImage}
               alt="Car"
+              width={500}
+              height={500}
               className="w-full h-full object-cover md:object-contain"
+              priority={true}
             />
           )}
         </div>
@@ -39,8 +43,10 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
           {otherImages.length > 0 && (
             <div className="flex space-x-4">
               {otherImages.map((url, index) => (
-                <img
+                <Image
                   key={index}
+                  width={500}
+                  height={500}
                   src={url}
                   alt={`Car ${index + 2}`}
                   className="w-24 h-24 object-cover rounded-lg cursor-pointer"
