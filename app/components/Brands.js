@@ -7,18 +7,18 @@ const Brands = () => {
   const [showAllBrands, setShowAllBrands] = useState(false);
 
   const brands = [
-    { id: "Hyundai", name: "Hyundai", alt: "Hyundai Logo" },
-    { id: "Suzuki", name: "Maruti", alt: "Suzuki Logo" },
-    { id: "Tata", name: "Tata", alt: "Tata Logo" },
-    { id: "Ford", name: "Ford", alt: "Ford Logo" },
-    { id: "Honda", name: "Honda", alt: "Honda Logo" },
-    { id: "Volkswagen", name: "Volkswagen", alt: "Volkswagen Logo" },
-    { id: "Chevrolet", name: "Chevrolet", alt: "Chevrolet Logo" },
-    { id: "Kia", name: "Kia", alt: "Kia Logo" },
-    { id: "Mercedes", name: "Mercedes", alt: "Mercedes Logo" },
-    { id: "Renault", name: "Renault", alt: "Renault Logo" },
-    { id: "Toyota", name: "Toyota", alt: "Toyota Logo" },
-    { id: "Bmw", name: "BMW", alt: "BMW Logo" },
+    { id: "hyundai", name: "Hyundai", alt: "Hyundai Logo" },
+    { id: "suzuki", name: "Maruti", alt: "Suzuki Logo" },
+    { id: "tata", name: "Tata", alt: "Tata Logo" },
+    { id: "ford", name: "Ford", alt: "Ford Logo" },
+    { id: "honda", name: "Honda", alt: "Honda Logo" },
+    { id: "volkswagen", name: "Volkswagen", alt: "Volkswagen Logo" },
+    { id: "chevrolet", name: "Chevrolet", alt: "Chevrolet Logo" },
+    { id: "kia", name: "Kia", alt: "Kia Logo" },
+    { id: "mercedes", name: "Mercedes", alt: "Mercedes Logo" },
+    { id: "renault", name: "Renault", alt: "Renault Logo" },
+    { id: "toyota", name: "Toyota", alt: "Toyota Logo" },
+    { id: "bmw", name: "BMW", alt: "BMW Logo" },
   ];
 
   const visibleBrands = showAllBrands ? brands : brands.slice(0, 6);
