@@ -195,7 +195,6 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
             <Link href="/contact" className="btn my-4 w-1/2 mx-auto">
               Buy
             </Link>
-
             <button
               type="button" // Use button element for history navigation
               onClick={() => {

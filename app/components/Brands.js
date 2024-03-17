@@ -26,12 +26,12 @@ const Brands = () => {
   return (
     <div>
       <h1 className="heading text-center m-8 p-8"> Choose by Brand: </h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8">
         {visibleBrands.map((brand, index) => (
           <Link
             key={index}
             href={`/brands/${brand.name}`}
-            className="border p-2 sm:p-4 flex justify-center items-center border-teal-200"
+            className="border p-2 sm:p-4 flex justify-center items-center bg-white shadow-2xl rounded-2xl"
           >
             <Image
               src={`/Brands/${brand.id}.png`}
