@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaCalendarAlt, FaGasPump } from "react-icons/fa";
 
 const CarCard = ({ car }) => {
   return (
-    <div className="p-4 bg-white rounded shadow-lg transform transition-transform hover:scale-105 h-full">
+    <div className="p-4 bg-white rounded shadow-lg transform transition-transform hover:scale-105 h-full flex flex-col">
       <div>
         {/* Image div starts */}
         {car.imageUrls && car.imageUrls.length > 0 && (
@@ -26,24 +27,32 @@ const CarCard = ({ car }) => {
           <strong className="mb-2 flex justify-center text-center">
             {car.carName}
           </strong>
-          <p className="mb-2 text-sm flex justify-center">
-            Make: {car.makeMonth} {car.makeYear}
-          </p>
-          <strong className="mb-2 flex justify-center">
+          <div className="flex justify-center mb-2">
+            <FaCalendarAlt className="mr-1" />
+            <p className="text-sm">
+              Make: {car.makeMonth} {car.makeYear}
+            </p>
+          </div>
+          <div className="flex justify-center mb-2">
+            <FaGasPump className="mr-1" />
+            <p className="text-sm">Fuel Type: {car.type}</p>
+          </div>
+          <strong className="text-lg mb-2 flex justify-center">
             Price: {car.price} Lakhs
           </strong>
-          <div className="flex justify-center">
-            <Link
-              href={{
-                pathname: `/viewCars/${car.id}`,
-              }}
-              className="mt-4 btn mb-4"
-            >
-              See Details
-            </Link>
-          </div>
         </div>
         {/* Details div ends */}
+      </div>
+      {/* Button */}
+      <div className="mt-auto">
+        <Link
+          href={{
+            pathname: `/viewCars/${car.id}`,
+          }}
+          className="btn mb-4 mx-16"
+        >
+          See Details
+        </Link>
       </div>
     </div>
   );
