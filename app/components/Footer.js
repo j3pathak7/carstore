@@ -76,7 +76,7 @@ function Footer() {
             data-aos-duration="1500"
             className="boxup-box flex flex-col grow items-center md:items-start basis-auto mb-[40px]"
           >
-            <div className="font-bold mb-4 text-lg">Site Map</div>
+            <div className="font-bold mb-4 text-lg">More</div>
             <Link
               href="/about"
               className="boxuplink font-normal leading-[200%] text-sm"
