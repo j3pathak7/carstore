@@ -2,14 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { FaCar } from "react-icons/fa";
 import {
-  AiOutlineHome,
-  AiOutlineHistory,
-  AiOutlineContacts,
-  AiOutlineQuestion,
-  AiOutlineLink,
+  AiOutlinePhone,
   AiOutlineMenu,
   AiOutlineClose,
+  AiOutlineInfoCircle,
+  AiOutlineStar,
 } from "react-icons/ai";
 
 function NavBar() {
@@ -18,34 +17,26 @@ function NavBar() {
   const close = (
     <AiOutlineClose className=" text-xl self-center cursor-pointer" />
   );
-  const [menubutton, setMenuButton] = useState(menu);
+  const [menuButton, setMenuButton] = useState(menu);
 
-  const home = <AiOutlineHome className="self-center text-teal-700" />;
-  const about = <AiOutlineHistory className="self-center text-teal-700" />;
-  const contact = <AiOutlineContacts className="self-center text-teal-700" />;
-  const link = (
-    <AiOutlineLink className="self-center text-teal-700 text-lg hover:scale-110" />
-  );
+  const home = <FaCar className="self-center text-teal-700" />;
+  const about = <AiOutlineInfoCircle className="self-center text-teal-700" />;
+  const contact = <AiOutlinePhone className="self-center text-teal-700" />;
+  const reviews = <AiOutlineStar className="self-center text-teal-700" />;
 
   const toggleSideBar = () => {
     if (sideBarWidth === "w-0") {
       setSideBarWidth("w-72");
-      setMenuButton(
-        <AiOutlineClose className="text-xl self-center cursor-pointer" />
-      );
+      setMenuButton(close);
     } else {
       setSideBarWidth("w-0");
-      setMenuButton(
-        <AiOutlineMenu className="text-xl self-center cursor-pointer" />
-      );
+      setMenuButton(menu);
     }
   };
 
   const closeSideBar = () => {
     setSideBarWidth("w-0");
-    setMenuButton(
-      <AiOutlineMenu className="text-xl self-center cursor-pointer" />
-    );
+    setMenuButton(menu);
   };
 
   return (
@@ -98,7 +89,7 @@ function NavBar() {
             href="/reviews"
             className="hover:scale-105 duration-150 flex items-center gap-2"
           >
-            {contact}Reviews
+            {reviews}Reviews
           </Link>
         </li>
       </ul>
@@ -107,11 +98,11 @@ function NavBar() {
         onClick={toggleSideBar}
         className="lg:hidden flex justify-center items-center"
       >
-        {menubutton}
+        {menuButton}
       </div>
 
       <div
-        className={`block lg:hidden absolute right-0 top-10 ${sideBarWidth} h-screen overflow-y-hidden bg-gray-50 duration-300`}
+        className={`block lg:hidden absolute right-0 top-10 ${sideBarWidth} h-screen overflow-y-hidden bg-gray-50 duration-300 opacity-95`}
       >
         <ul className="self-center space-y-8 [&>*]:p-2 py-10 px-3">
           <li>
@@ -147,7 +138,7 @@ function NavBar() {
               onClick={closeSideBar}
               className="hover:scale-105 duration-150 flex items-center gap-2"
             >
-              {contact}Reviews
+              {reviews}Reviews
             </Link>
           </li>
         </ul>
