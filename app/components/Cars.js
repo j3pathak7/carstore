@@ -130,7 +130,7 @@ const Cars = () => {
                 <option value="Ford">Ford</option>
               </select>
             </div>
-            <div className="mb-4 md:m-4">
+            <div className=" flex justify-center  items-center md:m-4">
               <label htmlFor="transmissionFilter" className="mr-2">
                 Transmission:
               </label>
