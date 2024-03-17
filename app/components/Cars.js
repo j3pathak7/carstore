@@ -168,8 +168,8 @@ const Cars = () => {
       {showNoCarsMessage && carList.length === 0 && (
         <div className="m-8">
           <p className="text-red-600 text-center mx-8">
-            Sorry, we couldn't find any cars as per your filters. Would you like
-            to adjust your criteria or explore other options?
+            Sorry, we couldn`&apos;`t find any cars as per your filters. Would
+            you like to adjust your criteria or explore other options?
           </p>
           <div className="flex justify-center m-8">
             <button className="btn" onClick={resetFilters}>
