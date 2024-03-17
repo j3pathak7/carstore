@@ -48,7 +48,7 @@ const Brands = () => {
         <div className="flex justify-center">
           <button
             onClick={() => setShowAllBrands(true)}
-            className="btn bg-white text-teal-600 mb-5 rounded mb-32"
+            className="btn bg-white text-teal-600 rounded mb-32"
           >
             See More
           </button>

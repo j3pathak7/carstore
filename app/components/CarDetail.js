@@ -14,6 +14,7 @@ import {
   FaHandHoldingUsd,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import Loading from "./Loading";
 
 const CarDetailCard = ({ carDetails, onGoBack }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -184,13 +185,20 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
               </p>
             </div>
           ) : (
-            <p>Loading...</p>
+            <div>
+              <Loading />
+            </div>
           )}
 
           {/* Go back button */}
-          <Link href="/viewCars" className="btn my-4 w-1/2 mx-auto">
-            Go Back
-          </Link>
+          <div>
+            <Link href="/contact" className="btn my-4 w-1/2 mx-auto">
+              Buy
+            </Link>
+            <Link href="/viewCars" className="btn my-4 w-1/2 mx-auto">
+              Go Back
+            </Link>
+          </div>
         </div>
       </div>
     </div>

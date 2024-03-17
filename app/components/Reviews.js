@@ -54,7 +54,7 @@ function Reviews() {
         data-aos-duration="3000"
       >
         <div className="bg-white rounded-lg shadow-2xl p-6">
-          <h1 className="text-teal-700 font-semibold text-2xl lg:text-3xl lg:text-4xl mb-4">
+          <h1 className="text-teal-700 font-semibold text-2xl  lg:text-4xl mb-4">
             {currentReview.name}
           </h1>
           <div className="flex items-center mb-4">
