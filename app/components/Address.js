@@ -9,22 +9,30 @@ function Address() {
       <div className="grid lg:grid-cols-2 gap-20">
         {/* Where to Find Us */}
         <div className="mb-8 lg:mb-0">
-          <h1 className="text-slate-700 text-2xl lg:text-3xl font-semibold">
+          <h1 className="heading">
             <span className="text-teal-800">Where</span> to{" "}
             <span className="text-teal-800"> Find</span> Us
           </h1>
-          <div className="mx-auto py-10 px-5 my-10 shadow-2xl shadow-slate-700 justify-center space-y-5">
-            <div className="flex gap-4 ">
+          <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5">
+            <div className="flex gap-4">
               <FaPhoneAlt className="self-center text-teal-800" />
-              <span>9706713213</span>
+              <a href="tel:+919706713213">9706713213</a>
             </div>
-            <div className="flex gap-4 ">
+            <div className="flex gap-4">
               <FaMapMarker className="self-center text-teal-800" />
-              <span>GANESHPARA, AK Dev Rd, Guwahati, Assam 781025</span>
+              <a
+                href="https://maps.app.goo.gl/JTr2ENMLRrEURNL46"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GANESHPARA, AK Dev Rd, Guwahati, Assam 781025
+              </a>
             </div>
-            <div className="flex gap-4 ">
+            <div className="flex gap-4">
               <AiFillMail className="self-center text-teal-800" />
-              <span>thecarstoreghy@gmail.com</span>
+              <a href="mailto:thecarstoreguwahati@gmail.com">
+                thecarstoreguwahati@gmail.com
+              </a>
             </div>
           </div>
         </div>

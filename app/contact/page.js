@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import { AiOutlineSend } from "react-icons/ai";
 import { useForm, ValidationError } from "@formspree/react";
-import { FaSpinner } from "react-icons/fa";
+import { FaSpinner, FaPhoneAlt, FaMapMarker } from "react-icons/fa";
+import { AiFillMail } from "react-icons/ai";
 import { toast } from "react-toastify";
 
 function ContactUs() {
@@ -45,11 +46,41 @@ function ContactUs() {
   };
 
   return (
-    <div className="bg-white m-8">
+    <div className="bg-gray-100 m-8">
       <h1 className="text-center heading">
-        <span className="text-teal-900 py-">Contact</span> Us
+        <span className="text-teal-900 py-8">Contact</span> Us
       </h1>
-      <div className="flex py-5">
+      <div className="flex flex-col lg:flex-row py-5">
+        <div className="lg:w-1/2 lg:p-10">
+          <div className="mb-8 lg:mb-0">
+            <h1 className="heading">
+              <span className="text-teal-800">Where</span> to{" "}
+              <span className="text-teal-800"> Find</span> Us
+            </h1>
+            <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5">
+              <div className="flex gap-4">
+                <FaPhoneAlt className="self-center text-teal-800" />
+                <a href="tel:+919706713213">9706713213</a>
+              </div>
+              <div className="flex gap-4">
+                <FaMapMarker className="self-center text-teal-800" />
+                <a
+                  href="https://maps.app.goo.gl/JTr2ENMLRrEURNL46"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GANESHPARA, AK Dev Rd, Guwahati, Assam 781025
+                </a>
+              </div>
+              <div className="flex gap-4">
+                <AiFillMail className="self-center text-teal-800" />
+                <a href="mailto:thecarstoreguwahati@gmail.com">
+                  thecarstoreguwahati@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="lg:w-1/2 lg:p-10">
           <div className="space-y-2">
             <h1 className="subheading">Get in touch</h1>
@@ -125,11 +156,6 @@ function ContactUs() {
               Send Message {delivery}
             </button>
           </form>
-        </div>
-        <div className="hidden self-center lg:block w-1/2 p-10">
-          <div className="card">
-            <img src="/contact.png" alt="Contact Illustration" />
-          </div>
         </div>
       </div>
     </div>

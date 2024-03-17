@@ -94,8 +94,10 @@ const Cars = () => {
     sortByPrice !== null;
 
   return (
-    <div className="container mx-auto p-8 text-teal-800">
-      <h1 className="text-4xl font-bold mb-4">List of Cars</h1>
+    <div className="container mx-auto p-8">
+      <h1 className="pb-4 heading">
+        <span className="text-teal-900 py-8">List of</span> Cars
+      </h1>
       <div className="md:flex justify-between items-center mb-4 md:h-10">
         <div className="flex">
           <button
@@ -168,8 +170,8 @@ const Cars = () => {
       {showNoCarsMessage && carList.length === 0 && (
         <div className="m-8">
           <p className="text-red-600 text-center mx-8">
-            Sorry, we couldn`&apos;`t find any cars as per your filters. Would
-            you like to adjust your criteria or explore other options?
+            Sorry, we couldn&apos;t find any cars as per your filters. Would you
+            like to adjust your criteria or explore other options?
           </p>
           <div className="flex justify-center m-8">
             <button className="btn" onClick={resetFilters}>
@@ -178,7 +180,7 @@ const Cars = () => {
           </div>
         </div>
       )}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-teal-800">
         {carList
           .slice(pageNumber * carsPerPage, (pageNumber + 1) * carsPerPage)
           .map((car) => (

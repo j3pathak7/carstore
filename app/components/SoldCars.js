@@ -60,7 +60,7 @@ const SoldCars = () => {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-2xl font-bold my-4 text-gray-600">
+      <h1 className="heading pt-4 px-6">
         Our <span className="text-teal-800">Sold</span> Cars
       </h1>
 

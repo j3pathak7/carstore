@@ -63,8 +63,10 @@ const CarCardsDemo = () => {
   };
 
   return (
-    <div className="container mx-auto p-8 text-teal-800">
-      <div className="text-4xl mb-4">List of Cars</div>
+    <div className="container mx-auto p-8">
+      <h1 className="text-center heading">
+        <span className="text-teal-900 py-8">List of</span> Cars
+      </h1>
       <div className="flex justify-center md:flex-row items-center mb-4">
         <div className="m-4">
           <label htmlFor="brandFilter" className="mr-2">

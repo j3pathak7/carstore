@@ -35,7 +35,7 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center m-10 bg-white">
+    <div className="flex flex-col md:flex-row justify-center items-center m-10 bg-gray-100">
       {/* Image div and horizontal scroll */}
       <div className="w-full md:w-2/3 flex flex-col items-center">
         {/* Image div outside the card */}
@@ -192,12 +192,13 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
 
           {/* Go back button */}
           <div>
-            <Link href="/contact" className="btn my-4 md:w-1/2 mx-auto">
+            <Link href="/contact" className="btn my-4 w-1/2 mx-auto">
               Buy
             </Link>
-            <button className="btn my-4 md:w-1/2 mx-auto">
-              <Link href="/viewCars">Go Back</Link>
-            </button>
+
+            <Link href="/viewCars" className="btn my-4 w-1/2 md:w-1/2 mx-auto">
+              Go Back
+            </Link>
           </div>
         </div>
       </div>
