@@ -4,7 +4,7 @@ import { db } from "../../config/firebase";
 import { getDoc, doc } from "firebase/firestore";
 import CarDetailCard from "@/app/components/CarDetail";
 
-const viewCarsId = ({ params }) => {
+const ViewCarsId = ({ params }) => {
   const { carId } = params;
   const [carDetails, setCarDetails] = useState(null);
 
@@ -43,4 +43,4 @@ const viewCarsId = ({ params }) => {
   );
 };
 
-export default viewCarsId;
+export default ViewCarsId;
