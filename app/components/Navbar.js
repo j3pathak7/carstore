@@ -23,20 +23,30 @@ function NavBar() {
   const home = <AiOutlineHome className="self-center text-teal-700" />;
   const about = <AiOutlineHistory className="self-center text-teal-700" />;
   const contact = <AiOutlineContacts className="self-center text-teal-700" />;
-  const help = <AiOutlineQuestion className="self-center text-teal-700" />;
   const link = (
     <AiOutlineLink className="self-center text-teal-700 text-lg hover:scale-110" />
   );
 
-  function toggleSideBar() {
+  const toggleSideBar = () => {
     if (sideBarWidth === "w-0") {
       setSideBarWidth("w-72");
-      setMenuButton(close);
+      setMenuButton(
+        <AiOutlineClose className="text-xl self-center cursor-pointer" />
+      );
     } else {
       setSideBarWidth("w-0");
-      setMenuButton(menu);
+      setMenuButton(
+        <AiOutlineMenu className="text-xl self-center cursor-pointer" />
+      );
     }
-  }
+  };
+
+  const closeSideBar = () => {
+    setSideBarWidth("w-0");
+    setMenuButton(
+      <AiOutlineMenu className="text-xl self-center cursor-pointer" />
+    );
+  };
 
   return (
     <nav className="sticky top-0 bg-gray-100 text-teal-950 backdrop-blur-lg border-b-2 z-20 flex justify-between px-5 md:px-10 lg:px-20 xl:px-36 py-2 lg:py-4 shadow-md">
@@ -93,7 +103,10 @@ function NavBar() {
         </li>
       </ul>
 
-      <div onClick={toggleSideBar} className="lg:hidden">
+      <div
+        onClick={toggleSideBar}
+        className="lg:hidden flex justify-center items-center"
+      >
         {menubutton}
       </div>
 
@@ -104,6 +117,7 @@ function NavBar() {
           <li>
             <Link
               href="/viewCars"
+              onClick={closeSideBar}
               className="hover:scale-105 duration-150 flex items-center gap-2"
             >
               {home}View Cars
@@ -112,6 +126,7 @@ function NavBar() {
           <li>
             <Link
               href="/about"
+              onClick={closeSideBar}
               className="hover:scale-105 duration-150 flex items-center gap-2"
             >
               {about}About us
@@ -120,6 +135,7 @@ function NavBar() {
           <li>
             <Link
               href="/contact"
+              onClick={closeSideBar}
               className="hover:scale-105 duration-150 flex items-center gap-2"
             >
               {contact}Contact
@@ -128,6 +144,7 @@ function NavBar() {
           <li>
             <Link
               href="/reviews"
+              onClick={closeSideBar}
               className="hover:scale-105 duration-150 flex items-center gap-2"
             >
               {contact}Reviews
