@@ -25,10 +25,7 @@ const Brands = () => {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-8 flex justify-center">
-        {" "}
-        Choose by Brand:{" "}
-      </h1>
+      <h1 className="heading text-center m-8 p-8"> Choose by Brand: </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 mb-8">
         {visibleBrands.map((brand, index) => (
           <div
