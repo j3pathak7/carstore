@@ -65,8 +65,8 @@ const CarCardsDemo = () => {
   return (
     <div className="container mx-auto p-8 text-teal-800">
       <h1 className="text-4xl font-bold mb-4">List of Cars</h1>
-      <div className="flex flex-col md:flex-row items-center mb-4">
-        <div className="mr-4 mb-4 md:mb-0">
+      <div className="flex justify-center md:flex-row items-center mb-4">
+        <div className="m-4">
           <label htmlFor="brandFilter" className="mr-2">
             Filter by Brand:
           </label>

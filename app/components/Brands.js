@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Brands = () => {
   const [showAllBrands, setShowAllBrands] = useState(false);
@@ -34,12 +35,14 @@ const Brands = () => {
             key={index}
             className="border p-2 sm:p-4 flex justify-center items-center border-teal-200"
           >
-            <Image
-              src={`/Brands/${brand.name}.png`}
-              width={500}
-              height={500}
-              alt={brand.alt}
-            />
+            <Link href={`/brands/${brand.name}`}>
+              <Image
+                src={`/Brands/${brand.name}.png`}
+                width={500}
+                height={500}
+                alt={brand.alt}
+              />
+            </Link>
           </div>
         ))}
       </div>
@@ -47,7 +50,7 @@ const Brands = () => {
         <div className="flex justify-center">
           <button
             onClick={() => setShowAllBrands(true)}
-            className="btn bg-white  text-teal-600 mb-5 rounded mb-32"
+            className="btn bg-white text-teal-600 mb-5 rounded mb-32"
           >
             See More
           </button>

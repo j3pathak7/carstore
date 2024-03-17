@@ -96,8 +96,8 @@ function Footer() {
           >
             <Image
               src="/largeLogo.png"
-              width={100}
-              height={100}
+              width={120}
+              height={120}
               alt="Picture of the author"
             />
           </div>
