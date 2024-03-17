@@ -23,16 +23,19 @@ const Cars = () => {
         const carCollectionRef = collection(db, "cars");
         let carQuery = query(carCollectionRef);
 
-        // Apply filtering by car brand
-        if (filteredBrand) {
+        // Apply filtering by car brand and transmission
+        if (filteredBrand && filteredTransmission) {
+          carQuery = query(
+            carCollectionRef,
+            where("carBrand", "==", filteredBrand),
+            where("transmission", "==", filteredTransmission)
+          );
+        } else if (filteredBrand) {
           carQuery = query(
             carCollectionRef,
             where("carBrand", "==", filteredBrand)
           );
-        }
-
-        // Apply filtering by transmission
-        if (filteredTransmission) {
+        } else if (filteredTransmission) {
           carQuery = query(
             carCollectionRef,
             where("transmission", "==", filteredTransmission)
@@ -41,7 +44,7 @@ const Cars = () => {
 
         // Apply sorting by price
         if (sortByPrice) {
-          carQuery = query(carCollectionRef, orderBy("price", sortByPrice));
+          carQuery = query(carQuery, orderBy("price", sortByPrice));
         }
 
         const data = await getDocs(carQuery);
