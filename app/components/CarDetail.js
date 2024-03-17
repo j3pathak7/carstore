@@ -35,7 +35,7 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center m-10">
+    <div className="flex flex-col md:flex-row justify-center items-center m-10 bg-white">
       {/* Image div and horizontal scroll */}
       <div className="w-full md:w-2/3 flex flex-col items-center">
         {/* Image div outside the card */}
@@ -52,7 +52,7 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
           )}
         </div>
         {/* Display other images with horizontal scroll */}
-        <div className="w-full md:w-96 bg-white shadow-md rounded-lg overflow-x-auto p-4">
+        <div className="w-full md:w-96 bg-white shadow-2xl rounded-lg overflow-x-auto p-4">
           {otherImages.length > 0 && (
             <div className="flex space-x-4">
               {otherImages.map((url, index) => (
@@ -72,7 +72,7 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
         </div>
       </div>
       {/* Car details card */}
-      <div className="w-full md:w-1/2 bg-white shadow-md rounded-lg overflow-hidden ">
+      <div className="w-full md:w-1/2 bg-white shadow-2xl rounded-2xl overflow-hidden ">
         {/* Car details inside the card */}
         <div className="p-4">
           <h1 className="text-2xl font-bold mb-2 text-teal-800">Car Details</h1>
@@ -192,12 +192,12 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
 
           {/* Go back button */}
           <div>
-            <Link href="/contact" className="btn my-4 w-1/2 mx-auto">
+            <Link href="/contact" className="btn my-4 md:w-1/2 mx-auto">
               Buy
             </Link>
-            <Link href="/viewCars" className="btn my-4 w-1/2 mx-auto">
-              Go Back
-            </Link>
+            <button className="btn my-4 md:w-1/2 mx-auto">
+              <Link href="/viewCars">Go Back</Link>
+            </button>
           </div>
         </div>
       </div>

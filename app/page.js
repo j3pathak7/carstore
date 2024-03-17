@@ -8,7 +8,7 @@ import Cars from "./components/Cars";
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main className="bg-gray-100">
       <div className=" ">
         <Cars />
         {/* <CarCards /> */}

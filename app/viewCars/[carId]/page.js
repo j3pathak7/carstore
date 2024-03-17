@@ -37,7 +37,7 @@ const CarDetailsPage = ({ params }) => {
   }, [carId]);
 
   return (
-    <div>
+    <div className="bg-gray-100">
       <CarDetailCard carDetails={carDetails} />
     </div>
   );

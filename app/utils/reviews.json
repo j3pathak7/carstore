@@ -1,23 +1,27 @@
 [
     {
-        "name":"Samuel Okeshola",
+        "name": "Ravi Sharma",
         "stars": 5,
-        "review":"A truly remarkable stay! The rooms were beautifully appointed, and the staff went above and beyond to ensure our comfort. The food was absolutely divine. Highly recommend!"
-    },{
-        "name":"Fikayo Jetawo",
+        "review": "Absolutely delighted with my purchase from The Car Store! The vehicle was in excellent condition, and the service provided by the staff was top-notch. Highly recommended!"
+    },
+    {
+        "name": "Priya Patel",
         "stars": 5,
-        "review":"Impeccable service and attention to detail. The serene ambiance provided the perfect escape. The meals were a culinary delight, exceeding all expectations. Can't wait to return!"
-    },{
-        "name":"Sadu Awaal",
+        "review": "The Car Store exceeded all my expectations! The car I bought was meticulously maintained, and the sales team was extremely helpful throughout the process. Great experience!"
+    },
+    {
+        "name": "Sanjay Gupta",
         "stars": 5,
-        "review":"The hotel exceeded all our expectations. The rooms were luxurious and comfortable, and the staff treated us with utmost respect and professionalism. The food was exceptional"
-    },{
-        "name":"Gbenga Martins",
+        "review": "I had a fantastic experience buying a car from The Car Store. The quality of the vehicle was superb, and the staff was knowledgeable and courteous. I'll definitely be back!"
+    },
+    {
+        "name": "Asha Singh",
         "stars": 5,
-        "review":"A hidden gem! The tranquil environment made for a relaxing retreat. The meals were an absolute treat for the taste buds. We were impressed by the warm and attentive staff"
-    },{
-        "name":"Okoye Emeka",
+        "review": "What a wonderful car buying experience at The Car Store! The staff was friendly and accommodating, and I couldn't be happier with my purchase. Highly impressed!"
+    },
+    {
+        "name": "Vijay Kumar",
         "stars": 5,
-        "review":"What an unforgettable experience! From the moment we arrived, we were enveloped in luxury. The food was a gastronomic journey, and the staff made us feel like VIPs. Perfect!"
+        "review": "Kudos to The Car Store for providing excellent service! The car I purchased was exactly as advertised, and the entire transaction was smooth and hassle-free. Highly recommend!"
     }
 ]
