@@ -49,7 +49,7 @@ const CarCard = ({ car }) => {
           href={{
             pathname: `/viewCars/${car.id}`,
           }}
-          className="btn mb-4 mx-16"
+          className="btn mb-4 md:mx-16"
         >
           See Details
         </Link>
