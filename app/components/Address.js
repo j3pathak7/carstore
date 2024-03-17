@@ -5,7 +5,7 @@ import { AiFillMail } from "react-icons/ai";
 
 function Address() {
   return (
-    <div className="md:p-16 bg-white p-4">
+    <div className="md:p-16 bg-gray-100 p-4">
       <div className="grid lg:grid-cols-2 gap-10">
         {/* Where to Find Us */}
         <div className="mb-8 lg:mb-0">
@@ -41,7 +41,7 @@ function Address() {
         <div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14327.279722769998!2d91.7247258!3d26.1374136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5b3fd877d611%3A0x882e158659361d36!2sTHE%20CAR%20STORE!5e0!3m2!1sen!2sin!4v1710527651717!5m2!1sen!2sin"
-            className="w-full h-96 rounded-3xl p-6 md:p-8"
+            className="w-full h-96 rounded-3xl p-6 md:p-8 mb-8"
             title="map"
             loading="lazy"
           ></iframe>
