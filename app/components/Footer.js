@@ -94,7 +94,7 @@ function Footer() {
             data-aos-duration="1500"
             className="boxup-box flex flex-col grow items-center md:items-start basis-auto mb-[40px]"
           >
-            <img
+            <Image
               src="/largeLogo.png"
               width={120}
               height={120}
