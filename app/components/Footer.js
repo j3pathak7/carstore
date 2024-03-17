@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
 import {
   FaMapMarker,
@@ -120,10 +121,10 @@ function Footer() {
               {phone} &nbsp;9706713213
             </a>
             <a
-              href="mailto:thecarstoreghy@gmail.com"
+              href="mailto:thecarstoreguwahati@gmail.com"
               className="boxuplink font-normal leading-[200%] text-sm"
             >
-              {mail} &nbsp;thecarstoreghy@gmail.com
+              {mail} &nbsp;thecarstoreguwahati@gmail.com
             </a>
           </div>
         </div>
@@ -142,14 +143,17 @@ function Footer() {
                 >
                   <FaFacebookF className="mr-[35px] md:mr-[45px]" />
                 </Link>
-                {/* <a href="" className="inline-block">
-                  <FaTwitter className="mr-[35px] md:mr-[45px]" />
-                </a> */}
                 <Link
                   href="https://www.instagram.com/the_car_store_bharat_/"
                   className="inline-block"
                 >
-                  <FaInstagram className="mr-0" />
+                  <FaInstagram className="mr-[35px] md:mr-[45px]" />
+                </Link>
+                <Link
+                  href="https://api.whatsapp.com/send?phone=%2B918240688165"
+                  className="inline-block"
+                >
+                  <FaWhatsapp className="mr-0" />
                 </Link>
               </div>
             </div>

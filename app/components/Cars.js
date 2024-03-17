@@ -148,7 +148,7 @@ const Cars = () => {
           </div>
         )}
         {showSort && (
-          <div className="m-4 flex justify-center">
+          <div className="m-4 flex justify-center items-center">
             <label htmlFor="priceSort" className="mr-2">
               Price:
             </label>

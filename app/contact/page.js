@@ -45,9 +45,9 @@ function ContactUs() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white m-8">
       <h1 className="text-center heading">
-        <span className="text-teal-900">Contact</span> Us
+        <span className="text-teal-900 py-">Contact</span> Us
       </h1>
       <div className="flex py-5">
         <div className="lg:w-1/2 lg:p-10">
@@ -127,7 +127,9 @@ function ContactUs() {
           </form>
         </div>
         <div className="hidden self-center lg:block w-1/2 p-10">
-          <img src="/contact.png" alt="Contact Illustration" />
+          <div className="card">
+            <img src="/contact.png" alt="Contact Illustration" />
+          </div>
         </div>
       </div>
     </div>
