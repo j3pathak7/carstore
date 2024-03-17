@@ -95,7 +95,7 @@ function Footer() {
             className="boxup-box flex flex-col grow items-center md:items-start basis-auto mb-[40px]"
           >
             <Image
-              src="/largeLogo.png"
+              src="/logo.png"
               width={120}
               height={120}
               alt="Picture of the author"
