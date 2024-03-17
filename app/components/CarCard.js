@@ -23,7 +23,9 @@ const CarCard = ({ car }) => {
 
         {/* Details div starts */}
         <div className="sm:mt-4">
-          <strong className="mb-2 flex justify-center">{car.carName}</strong>
+          <strong className="mb-2 flex justify-center text-center">
+            {car.carName}
+          </strong>
           <p className="mb-2 text-sm flex justify-center">
             Make: {car.makeMonth} {car.makeYear}
           </p>
