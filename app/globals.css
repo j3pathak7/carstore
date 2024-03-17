@@ -44,7 +44,7 @@
 }
 
 .heading {
-  @apply lg:text-5xl text-4xl font-semibold text-teal-700;
+  @apply lg:text-5xl text-4xl font-semibold text-teal-600;
 }
 
 .subheading {

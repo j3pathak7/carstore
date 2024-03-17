@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="bg-gray-100">
       <div className=" ">
-        <div className="flex justify-center object-contain m-8">
+        <div className="flex justify-center object-contain">
           <Image
             src="/logo.png"
             width={200}

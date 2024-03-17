@@ -1,11 +1,12 @@
 import React from "react";
 import { FaGasPump } from "react-icons/fa";
-import Link from "next/link"; // Importing the Gas Pump icon from React Icons
+import Link from "next/link"; // Importing the Link component from Next.js
 
 const HorizontalScrollCard = ({ car }) => {
   return (
-    <div
-      className="flex p-4 bg-white rounded-2xl shadow-2xl"
+    <Link
+      href={`/viewCars/${car.id}`}
+      className="flex p-4 bg-white rounded-2xl shadow-2xl cursor-pointer"
       style={{ width: "300px", height: "150px" }}
     >
       {/* Image Section */}
@@ -35,7 +36,7 @@ const HorizontalScrollCard = ({ car }) => {
         </div>
         <div>{/* Additional details can be added here */}</div>{" "}
       </div>
-    </div>
+    </Link>
   );
 };
 

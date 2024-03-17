@@ -7,18 +7,18 @@ const Brands = () => {
   const [showAllBrands, setShowAllBrands] = useState(false);
 
   const brands = [
-    { name: "hyundai", alt: "Hyundai Logo" },
-    { name: "suzuki", alt: "Suzuki Logo" },
-    { name: "tata", alt: "Tata Logo" },
-    { name: "ford", alt: "Ford Logo" },
-    { name: "honda", alt: "Honda Logo" },
-    { name: "volkswagen", alt: "Volkswagen Logo" },
-    { name: "chevrolet", alt: "Chevrolet Logo" },
-    { name: "kia", alt: "Kia Logo" },
-    { name: "mercedes", alt: "Mercedes Logo" },
-    { name: "renault", alt: "Renault Logo" },
-    { name: "toyota", alt: "Toyota Logo" },
-    { name: "bmw", alt: "BMW Logo" },
+    { id: "Hyundai", name: "Hyundai", alt: "Hyundai Logo" },
+    { id: "Suzuki", name: "Maruti", alt: "Suzuki Logo" },
+    { id: "Tata", name: "Tata", alt: "Tata Logo" },
+    { id: "Ford", name: "Ford", alt: "Ford Logo" },
+    { id: "Honda", name: "Honda", alt: "Honda Logo" },
+    { id: "Volkswagen", name: "Volkswagen", alt: "Volkswagen Logo" },
+    { id: "Chevrolet", name: "Chevrolet", alt: "Chevrolet Logo" },
+    { id: "Kia", name: "Kia", alt: "Kia Logo" },
+    { id: "Mercedes", name: "Mercedes", alt: "Mercedes Logo" },
+    { id: "Renault", name: "Renault", alt: "Renault Logo" },
+    { id: "Toyota", name: "Toyota", alt: "Toyota Logo" },
+    { id: "Bmw", name: "BMW", alt: "BMW Logo" },
   ];
 
   const visibleBrands = showAllBrands ? brands : brands.slice(0, 6);
@@ -28,17 +28,18 @@ const Brands = () => {
       <h1 className="heading text-center m-8 p-8"> Choose by Brand: </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 mb-8">
         {visibleBrands.map((brand, index) => (
-          <div
+          <Link
             key={index}
+            href={`/brands/${brand.name}`}
             className="border p-2 sm:p-4 flex justify-center items-center border-teal-200"
           >
             <Image
-              src={`/Brands/${brand.name}.png`}
+              src={`/Brands/${brand.id}.png`}
               width={500}
               height={500}
               alt={brand.alt}
             />
-          </div>
+          </Link>
         ))}
       </div>
       {!showAllBrands && (

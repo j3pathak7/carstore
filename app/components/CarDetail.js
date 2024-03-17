@@ -196,9 +196,15 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
               Buy
             </Link>
 
-            <Link href="/viewCars" className="btn my-4 w-1/2 md:w-1/2 mx-auto">
+            <button
+              type="button" // Use button element for history navigation
+              onClick={() => {
+                window.history.back(); // Always execute browser history navigation
+              }}
+              className="btn my-4 w-1/2 md:w-1/2 mx-auto"
+            >
               Go Back
-            </Link>
+            </button>
           </div>
         </div>
       </div>
