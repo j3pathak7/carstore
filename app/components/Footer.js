@@ -13,6 +13,7 @@ import {
   FaPhone,
   FaPhoneAlt,
 } from "react-icons/fa";
+import Image from "next/image";
 
 function Footer() {
   const suscriberMailContainer = useRef(null);
@@ -76,7 +77,7 @@ function Footer() {
           >
             <div className="font-bold mb-4 text-lg">Site Map</div>
             <Link
-              href="/"
+              href="/about"
               className="boxuplink font-normal leading-[200%] text-sm"
             >
               About Us
@@ -93,25 +94,12 @@ function Footer() {
             data-aos-duration="1500"
             className="boxup-box flex flex-col grow items-center md:items-start basis-auto mb-[40px]"
           >
-            <div className="font-bold mb-4 text-lg">Help Center</div>
-            <Link
-              href="/help"
-              className="boxuplink font-normal leading-[200%] text-sm"
-            >
-              FAQ&apos;S
-            </Link>
-            <Link
-              href="/terms"
-              className="boxuplink font-normal leading-[200%] text-sm"
-            >
-              Terms & Conditions
-            </Link>
-            <Link
-              href="/privacy-policy"
-              className="boxuplink font-normal leading-[200%] text-sm"
-            >
-              Privacy Policy
-            </Link>
+            <Image
+              src="/largeLogo.png"
+              width={100}
+              height={100}
+              alt="Picture of the author"
+            />
           </div>
           <div
             data-aos="fade-up"
@@ -146,33 +134,29 @@ function Footer() {
             className="md:flex md:justify-between md:items-center lg:flex-col"
           >
             <div className="social text-center md:text-start md:self-start">
-              <div className="mb-[8px] font-bold text-[18px]">Join Us</div>
+              <div className="mb-[8px] font-bold text-[18px]">Reach Out</div>
               <div className="text-primary text-[23px]">
-                <a href="" className="inline-block">
+                <Link
+                  href="https://www.facebook.com/p/The-Car-Store-Guwahati-100063880484633/"
+                  className="inline-block"
+                >
                   <FaFacebookF className="mr-[35px] md:mr-[45px]" />
-                </a>
-                <a href="" className="inline-block">
+                </Link>
+                {/* <a href="" className="inline-block">
                   <FaTwitter className="mr-[35px] md:mr-[45px]" />
-                </a>
-                <a
-                  href="https://www.instagram.com/esquireresort/"
+                </a> */}
+                <Link
+                  href="https://www.instagram.com/the_car_store_bharat_/"
                   className="inline-block"
                 >
                   <FaInstagram className="mr-0" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="news mt-[40px] md:mt-[0]">
-              <div className="newsbox mb-[20px] max-w-[400px] md:max-w-[350px]">
-                <div className="mb-[8px] font-bold text-[18px] md:text-start">
-                  Don&apos;t Miss Out
-                </div>
-                <p className="mb-[24px] leading-[19px] font-normal md:text-[14px]">
-                  Exclusive offers are just a click away.
-                </p>
-              </div>
+              <div className="newsbox mb-[20px] max-w-[400px] md:max-w-[350px]"></div>
               <div className="text-center text-[#999999] test-sm">
-                &copy; 2023 bordoisilahotel.com All rights reserved.
+                &copy; 2024 THE CAR STORE All rights reserved.
               </div>
             </div>
           </div>
