@@ -69,6 +69,9 @@ const CarTypePage = ({ params }) => {
     };
 
     fetchData();
+
+    // Scroll to the top when the component mounts or when carTypeId changes
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [carTypeId]);
 
   return (
