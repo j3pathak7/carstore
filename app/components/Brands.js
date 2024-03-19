@@ -30,9 +30,20 @@ const Brands = () => {
   });
 
   return (
-    <div data-aos="fade-up" data-aos-duration="2000">
-      <h1 className="heading text-center m-8 p-8"> Choose by Brand: </h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8">
+    <div>
+      <h1
+        className="heading text-center m-8 p-8"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
+        {" "}
+        Choose by Brand:{" "}
+      </h1>
+      <div
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8 "
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         {visibleBrands.map((brand, index) => (
           <Link
             key={index}
@@ -49,7 +60,11 @@ const Brands = () => {
         ))}
       </div>
       {!showAllBrands && (
-        <div className="flex justify-center">
+        <div
+          className="flex justify-center"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <button
             onClick={() => setShowAllBrands(true)}
             className="btn bg-white text-teal-600 rounded mb-32"

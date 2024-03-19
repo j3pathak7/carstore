@@ -114,12 +114,20 @@ function Footer() {
             >
               {location} &nbsp;GANESHPARA, AK Dev Rd, Guwahati, Assam 781025{" "}
             </a>
-            <a
-              href="tel:+919706713213"
-              className="boxuplink font-normal leading-[200%] text-sm"
-            >
-              {phone} &nbsp;9706713213
-            </a>
+            <div>
+              <a
+                href="tel:+918135843184"
+                className="boxuplink font-normal leading-[200%] text-sm mr-4"
+              >
+                {phone} &nbsp;8135843184
+              </a>
+              <a
+                href="tel:+919706713213"
+                className="boxuplink font-normal leading-[200%] text-sm"
+              >
+                {phone} &nbsp;9706713213
+              </a>
+            </div>
             <a
               href="mailto:thecarstoreguwahati@gmail.com"
               className="boxuplink font-normal leading-[200%] text-sm"
@@ -149,10 +157,7 @@ function Footer() {
                 >
                   <FaInstagram className="mr-[35px] md:mr-[45px]" />
                 </Link>
-                <Link
-                  href="https://api.whatsapp.com/send?phone=%2B918240688165"
-                  className="inline-block"
-                >
+                <Link href="https://wa.me/8135843184" className="inline-block">
                   <FaWhatsapp className="mr-0" />
                 </Link>
               </div>
