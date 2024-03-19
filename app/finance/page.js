@@ -1,35 +1,78 @@
-const Page = () => {
-  // Sample car types data
-  const carTypes = [
-    { name: "Sedan", image: "sedan.jpg" },
-    { name: "SUV", image: "suv.jpg" },
-    { name: "MUV", image: "MUV.png" },
-    { name: "Hatchback", image: "Hatchback.png" },
-    { name: "Convertible", image: "convertible.jpg" },
-    { name: "Truck", image: "truck.jpg" },
-    { name: "Van", image: "van.jpg" },
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const Banks = () => {
+  const [showAllBanks, setShowAllBanks] = useState(false);
+
+  const banks = [
+    {
+      id: "tata-capital",
+      name: "Tata Capital LTD",
+      alt: "Tata Capital LTD Logo",
+    },
+    { id: "bajaj-finance", name: "Bajaj Finance", alt: "Bajaj Finance Logo" },
+    { id: "indusind-bank", name: "Indusind Bank", alt: "Indusind Bank Logo" },
+    { id: "yes-bank", name: "Yes Bank", alt: "Yes Bank Logo" },
+    { id: "hdfc-bank", name: "HDFC Bank", alt: "HDFC Bank Logo" },
+    { id: "idfc-bank", name: "IDFC Bank", alt: "IDFC Bank Logo" },
+    { id: "chola", name: "Chola", alt: "Chola Logo" },
+    {
+      id: "mahindra-finance",
+      name: "Mahindra Finance",
+      alt: "Mahindra Finance Logo",
+    },
+    { id: "hero-finance", name: "Hero Finance", alt: "Hero Finance Logo" },
   ];
 
+  const visibleBanks = showAllBanks ? banks : banks.slice(0, 6);
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <div className="container mx-auto p-4 sm:p-8">
-      <h1 className="text-3xl font-bold mb-4">Car Types</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {carTypes.map((carType, index) => (
-          <div
-            key={index}
-            className="border border-gray-300 rounded-lg p-4 flex flex-col items-center justify-center"
-          >
-            <img
-              src={`@/public/carTypes/${carType.image}`}
-              alt={carType.name}
-              className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-full mb-2"
+    <div data-aos="fade-up" data-aos-duration="2000">
+      <h1 className="heading text-center m-8 p-8">
+        We provide the following financing options
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8 ">
+        {visibleBanks.map((bank) => (
+          <div key={bank.id} className="flex justify-center">
+            <Image
+              src={`/finance/${bank.id}.png`}
+              width={250}
+              height={250}
+              alt={bank.alt}
+              className="bg-white shadow-2xl shadow-teal-500 object-contain h-36 rounded-2xl m-2"
             />
-            <p className="text-lg font-bold">{carType.name}</p>
           </div>
         ))}
       </div>
+      {!showAllBanks && (
+        <div className="flex justify-center">
+          <button
+            onClick={() => setShowAllBanks(true)}
+            className="btn bg-white text-teal-600 rounded mb-32"
+          >
+            See More
+          </button>
+        </div>
+      )}
+      {showAllBanks && (
+        <div className="flex justify-center">
+          <button
+            onClick={() => setShowAllBanks(false)}
+            className="btn bg-white text-teal-600 rounded mb-32"
+          >
+            See Less
+          </button>
+        </div>
+      )}
     </div>
   );
 };
 
-export default Page;
+export default Banks;
