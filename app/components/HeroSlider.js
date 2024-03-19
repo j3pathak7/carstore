@@ -57,7 +57,7 @@ const HeroSlider = () => {
   }, [currentSlide]); // Reset timer whenever currentSlide changes
 
   return (
-    <div className="hero-slider" data-aos="fade-down" data-aos-duration="2000">
+    <div className="hero-slider">
       <div className="lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1440px] mx-auto px-2 h-full">
         <div className="w-full lg:w-2/3 xl:w-1/2 h-full">
           <div className="carousel h-full w-full">
