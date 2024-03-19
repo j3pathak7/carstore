@@ -71,11 +71,11 @@ const SoldCars = () => {
       data-aos-duration="2000"
     >
       <h1
-        className="heading pt-4 px-6 text-teal-700"
+        className="heading pt-4 px-6 text-cyan-700"
         data-aos="fade-up"
         data-aos-duration="500"
       >
-        Our <span className="text-teal-500">Sold</span> Cars
+        Our <span className="text-cyan-500">Sold</span> Cars
       </h1>
 
       <div
@@ -103,7 +103,7 @@ const SoldCars = () => {
           data-glide-el="controls"
         >
           <button
-            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-teal-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-cyan-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir="<"
             aria-label="prev slide"
           >
@@ -120,12 +120,12 @@ const SoldCars = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
-                stroke="teal"
+                stroke="cyan"
               />
             </svg>
           </button>
           <button
-            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-teal-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-cyan-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir=">"
             aria-label="next slide"
           >
@@ -142,7 +142,7 @@ const SoldCars = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                stroke="teal"
+                stroke="cyan"
               />
             </svg>
           </button>

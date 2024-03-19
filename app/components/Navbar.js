@@ -20,11 +20,11 @@ function NavBar() {
   );
   const [menuButton, setMenuButton] = useState(menu);
 
-  const home = <FaCar className="self-center text-teal-500" />;
-  const about = <AiOutlineInfoCircle className="self-center text-teal-500" />;
-  const contact = <AiOutlinePhone className="self-center text-teal-500" />;
-  const reviews = <AiOutlineStar className="self-center text-teal-500" />;
-  const finance = <FaMoneyBill1Wave className="self-center text-teal-500" />;
+  const home = <FaCar className="self-center text-cyan-500" />;
+  const about = <AiOutlineInfoCircle className="self-center text-cyan-500" />;
+  const contact = <AiOutlinePhone className="self-center text-cyan-500" />;
+  const reviews = <AiOutlineStar className="self-center text-cyan-500" />;
+  const finance = <FaMoneyBill1Wave className="self-center text-cyan-500" />;
 
   const toggleSideBar = () => {
     if (sideBarWidth === "w-0") {
@@ -42,12 +42,12 @@ function NavBar() {
   };
 
   return (
-    <nav className="sticky top-0  text-teal-50 backdrop-blur-lg z-20 flex justify-between px-5 md:px-10 lg:px-20 xl:px-36 py-2 lg:py-4 shadow-md">
+    <nav className="sticky top-0  text-cyan-50 backdrop-blur-lg z-20 flex justify-between px-5 md:px-10 lg:px-20 xl:px-36 py-2 lg:py-4 shadow-md">
       {/* Logo */}
       <div className="self-center flex gap-2">
         <Link
           href="/"
-          className="self-center text-lg lg:text-xl text-teal-400 flex items-center"
+          className="self-center text-lg lg:text-xl text-cyan-400 flex items-center"
         >
           The Car Store
         </Link>
@@ -105,9 +105,9 @@ function NavBar() {
       </div>
 
       <div
-        className={`block lg:hidden absolute right-0 top-10 ${sideBarWidth} h-screen overflow-y-hidden bg-teal-950 duration-300 opacity-95`}
+        className={`block lg:hidden absolute right-0 top-10 ${sideBarWidth} h-screen overflow-y-hidden bg-cyan-950 duration-300 opacity-95`}
       >
-        <ul className="self-center space-y-8 [&>*]:p-2 py-10 px-3 text-teal-50">
+        <ul className="self-center space-y-8 [&>*]:p-2 py-10 px-3 text-cyan-50">
           <li>
             <Link
               href="/viewCars"

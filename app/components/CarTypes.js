@@ -43,7 +43,7 @@ const CarTypes = () => {
           <Link
             key={type.id}
             href={`/carTypes/${type.name}`}
-            className="border p-2 sm:p-4 flex flex-col justify-start items-center bg-white shadow-2xl shadow-teal-500 rounded-2xl h-32 md:h-36 object-contain m-2" // Changed justify-center to justify-start
+            className="border p-2 sm:p-4 flex flex-col justify-start items-center bg-white shadow-2xl shadow-cyan-500 rounded-2xl h-32 md:h-36 object-contain m-2" // Changed justify-center to justify-start
           >
             <div
               className="h-24 sm:h-28"
@@ -58,7 +58,7 @@ const CarTypes = () => {
                 className="object-contain"
               />
             </div>
-            <p className="text-center text-teal-800 flex-grow">{type.name}</p>{" "}
+            <p className="text-center text-cyan-800 flex-grow">{type.name}</p>{" "}
             {/* Added flex-grow */}
           </Link>
         ))}
@@ -71,7 +71,7 @@ const CarTypes = () => {
         >
           <button
             onClick={() => setShowAllTypes(true)}
-            className="btn bg-white text-teal-600 rounded mb-32"
+            className="btn bg-white text-cyan-600 rounded mb-32"
           >
             See More
           </button>

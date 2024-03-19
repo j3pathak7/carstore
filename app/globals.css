@@ -40,15 +40,15 @@
 }
 
 .btn {
-  @apply flex border-none gap-2 hover:scale-105 hover:bg-teal-300 hover:text-teal-950 py-2.5 px-6 font-medium text-lg bg-teal-600 text-white rounded-lg;
+  @apply flex border-none gap-2 hover:scale-105 hover:bg-cyan-300 hover:text-cyan-950 py-2.5 px-6 font-medium text-lg bg-cyan-600 text-white rounded-lg;
 }
 
 .heading {
-  @apply lg:text-5xl text-4xl font-semibold text-teal-600;
+  @apply lg:text-5xl text-4xl font-semibold text-cyan-600;
 }
 
 .subheading {
-  @apply text-teal-700 text-2xl lg:text-3xl font-semibold;
+  @apply text-cyan-700 text-2xl lg:text-3xl font-semibold;
 }
 
 .desc {
@@ -187,7 +187,7 @@
 
 
 .car {
-  color: teal;
+  color: cyan;
   /* Change color as per your requirement */
 }
 .hide-scrollbar {

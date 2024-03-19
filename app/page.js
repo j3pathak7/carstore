@@ -8,12 +8,13 @@ import Cars from "./components/Cars";
 import CarsHorizontalScroll from "./components/CarsHorizontalScroll";
 import Image from "next/image";
 import CarTypes from "./components/CarTypes";
+import Search from "./components/Search";
 
 export default function Home() {
   return (
     <main className="">
       <div className="">
-        <div className=" my-16 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-teal-500">
+        <div className=" my-16 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-cyan-500">
           <Image
             src="/logo.png"
             width={200}
@@ -21,6 +22,7 @@ export default function Home() {
             alt="Picture of the author"
           />
         </div>
+        <Search />
         <div>
           <CarsHorizontalScroll />
         </div>

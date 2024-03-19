@@ -95,8 +95,8 @@ const Cars = () => {
 
   return (
     <div className="container mx-auto p-8">
-      <h1 className="pb-4 heading text-teal-500">
-        <span className="text-teal-700 py-8">List of</span> Cars
+      <h1 className="pb-4 heading text-cyan-500">
+        <span className="text-cyan-700 py-8">List of</span> Cars
       </h1>
       <div className="md:flex justify-between items-center mb-4 md:h-10">
         <div className="flex">
@@ -116,7 +116,7 @@ const Cars = () => {
         {showFilter && (
           <div className="flex flex-wrap gap-4 justify-center">
             <div className="m-4">
-              <label htmlFor="brandFilter" className="mr-2 text-teal-50">
+              <label htmlFor="brandFilter" className="mr-2 text-cyan-50">
                 Brand:
               </label>
               <select
@@ -133,7 +133,7 @@ const Cars = () => {
               </select>
             </div>
             <div className=" flex justify-center  items-center md:m-4">
-              <label htmlFor="transmissionFilter" className="mr-2 text-teal-50">
+              <label htmlFor="transmissionFilter" className="mr-2 text-cyan-50">
                 Transmission:
               </label>
               <select
@@ -151,7 +151,7 @@ const Cars = () => {
         )}
         {showSort && (
           <div className="m-4 flex justify-center items-center">
-            <label htmlFor="priceSort" className="mr-2 text-teal-50">
+            <label htmlFor="priceSort" className="mr-2 text-cyan-50">
               Price:
             </label>
             <select
@@ -180,7 +180,7 @@ const Cars = () => {
           </div>
         </div>
       )}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-teal-800">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-cyan-800">
         {carList
           .slice(pageNumber * carsPerPage, (pageNumber + 1) * carsPerPage)
           .map((car) => (

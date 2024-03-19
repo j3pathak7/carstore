@@ -20,12 +20,12 @@ function Address() {
           data-aos-duration="2000"
         >
           <h1 className="heading">
-            <span className="text-teal-800">Where</span> to{" "}
-            <span className="text-teal-800"> Find</span> Us
+            <span className="text-cyan-800">Where</span> to{" "}
+            <span className="text-cyan-800"> Find</span> Us
           </h1>
-          <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-teal-500  justify-center space-y-5 bg-white">
+          <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-cyan-500  justify-center space-y-5 bg-white">
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">
-              <FaPhoneAlt className="self-center text-teal-800" />
+              <FaPhoneAlt className="self-center text-cyan-800" />
               <div className="flex gap-2">
                 <a href="tel:+918135843184">8135843184</a>,
                 <a href="tel:+919706713213">9706713213</a>
@@ -34,7 +34,7 @@ function Address() {
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">
               {" "}
               {/* Adjust text size for small devices */}
-              <FaMapMarker className="self-center text-teal-800" />
+              <FaMapMarker className="self-center text-cyan-800" />
               <a
                 href="https://maps.app.goo.gl/JTr2ENMLRrEURNL46"
                 target="_blank"
@@ -46,7 +46,7 @@ function Address() {
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">
               {" "}
               {/* Adjust text size for small devices */}
-              <AiFillMail className="self-center text-teal-800" />
+              <AiFillMail className="self-center text-cyan-800" />
               <a href="mailto:thecarstoreguwahati@gmail.com">
                 thecarstoreguwahati@gmail.com
               </a>

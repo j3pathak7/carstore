@@ -5,7 +5,14 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-export const roboto_mono = Roboto_Mono({
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
   display: "swap",
   weight: ["400"],
@@ -19,8 +26,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto_mono.variable}`}>
-        <div className="bg-gradient-to-r from-teal-950 to-black">
+      <body className={`${poppins.variable}`}>
+        <div className="bg-gradient-to-r from-cyan-950 to-black">
           <Navbar />
           {children}
           <Footer />

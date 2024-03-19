@@ -7,7 +7,7 @@ import { AiFillMail } from "react-icons/ai";
 import { toast } from "react-toastify";
 
 function ContactUs() {
-  const send = <AiOutlineSend className="inline self-center text-teal-800" />;
+  const send = <AiOutlineSend className="inline self-center text-cyan-800" />;
   const spinner = <FaSpinner className="fa-spin inline" />;
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
@@ -47,26 +47,26 @@ function ContactUs() {
 
   return (
     <div className=" m-8">
-      <h1 className="text-center heading text-teal-700">
-        <span className="text-teal-500 py-8">Contact</span> Us
+      <h1 className="text-center heading text-cyan-700">
+        <span className="text-cyan-500 py-8">Contact</span> Us
       </h1>
       <div className="flex flex-col lg:flex-row py-5">
         <div className="lg:w-1/2 lg:p-10">
           <div className="mb-8 lg:mb-0">
             <h1 className="heading">
-              <span className="text-teal-700">Where</span> to{" "}
-              <span className="text-teal-500"> Find</span> Us
+              <span className="text-cyan-700">Where</span> to{" "}
+              <span className="text-cyan-500"> Find</span> Us
             </h1>
             <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5 bg-white">
               <div className="flex gap-4 text-sm md:text-base lg:text-lg">
-                <FaPhoneAlt className="self-center text-teal-800" />
+                <FaPhoneAlt className="self-center text-cyan-800" />
                 <div className="flex gap-2">
                   <a href="tel:+918135843184">8135843184</a>,
                   <a href="tel:+919706713213">9706713213</a>
                 </div>
               </div>
               <div className="flex gap-4">
-                <FaMapMarker className="self-center text-teal-800" />
+                <FaMapMarker className="self-center text-cyan-800" />
                 <a
                   href="https://maps.app.goo.gl/JTr2ENMLRrEURNL46"
                   target="_blank"
@@ -76,7 +76,7 @@ function ContactUs() {
                 </a>
               </div>
               <div className="flex gap-4">
-                <AiFillMail className="self-center text-teal-800" />
+                <AiFillMail className="self-center text-cyan-800" />
                 <a href="mailto:thecarstoreguwahati@gmail.com">
                   thecarstoreguwahati@gmail.com
                 </a>
@@ -86,17 +86,17 @@ function ContactUs() {
         </div>
         <div className="lg:w-1/2 lg:p-10">
           <div className="space-y-2">
-            <h1 className="subheading text-teal-700">
-              Get in <span className="text-teal-500">touch</span>
+            <h1 className="subheading text-cyan-700">
+              Get in <span className="text-cyan-500">touch</span>
             </h1>
-            <p className="text-teal-50">
+            <p className="text-cyan-50">
               Feel free to reach out to us for any inquiries or assistance. We
               value your input and are here to help.
             </p>
           </div>
           <form
             onSubmit={handleFormSubmit}
-            className="my-10 text-sm lg:text-md grid grid-cols-2 gap-6 [&>*]:duration-150 [&>*]:border-2 [&>*]:py-3 [&>*]:px-4 [&>*]:rounded-lg [&>*]:border-teal-700 "
+            className="my-10 text-sm lg:text-md grid grid-cols-2 gap-6 [&>*]:duration-150 [&>*]:border-2 [&>*]:py-3 [&>*]:px-4 [&>*]:rounded-lg [&>*]:border-cyan-700 "
           >
             <input
               type="text"
@@ -105,7 +105,7 @@ function ContactUs() {
               onChange={(e) => setName(e.target.value)}
               placeholder="Name"
               required
-              className="focus:outline-none focus:border-teal-800 bg-white"
+              className="focus:outline-none focus:border-cyan-800 bg-white"
             />
             <input
               type="text"
@@ -114,7 +114,7 @@ function ContactUs() {
               onChange={(e) => setSubject(e.target.value)}
               placeholder="Subject"
               required
-              className="focus:outline-none focus:border-teal-800 bg-white"
+              className="focus:outline-none focus:border-cyan-800 bg-white"
             />
             <input
               type="email"
@@ -123,7 +123,7 @@ function ContactUs() {
               onChange={(e) => setMail(e.target.value)}
               placeholder="Email"
               required
-              className="focus:outline-none focus:border-teal-800 bg-white"
+              className="focus:outline-none focus:border-cyan-800 bg-white"
             />
             <input
               type="tel"
@@ -133,7 +133,7 @@ function ContactUs() {
               onChange={(e) => setPhone(e.target.value)}
               placeholder="Phone"
               required
-              className="focus:outline-none focus:border-teal-800 bg-white"
+              className="focus:outline-none focus:border-cyan-800 bg-white"
             />
             <ValidationError
               prefix="Phone"
@@ -146,7 +146,7 @@ function ContactUs() {
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Message"
               required
-              className="col-span-2 focus:outline-none focus:border-teal-800 h-32 bg-white"
+              className="col-span-2 focus:outline-none focus:border-cyan-800 h-32 bg-white"
             ></textarea>
             <ValidationError
               prefix="Message"

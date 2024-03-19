@@ -21,14 +21,14 @@ function About() {
           <div className="lg:h-[25rem] flex flex-col lg:flex-row">
             <div className="lg:w-1/2 p-4 flex flex-col justify-center space-y-5 my-5">
               <h1
-                className="text-3xl font-semibold text-teal-500"
+                className="text-3xl font-semibold text-cyan-500"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
                 About Us
               </h1>
               <p
-                className="leading-relaxed text-teal-50 pr-8"
+                className="leading-relaxed text-cyan-50 pr-8"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
@@ -54,7 +54,7 @@ function About() {
                 width={800}
                 height={300}
                 alt="Hotel View"
-                className="object-cover rounded-2xl h-full shadow-2xl shadow-teal-500 "
+                className="object-cover rounded-2xl h-full shadow-2xl shadow-cyan-500 "
               />
             </div>
           </div>

@@ -50,7 +50,7 @@ const CarDetailsPage = ({ params }) => {
   return (
     <div className="container mx-auto p-8 mb--8">
       <h1 className="text-center heading">
-        <span className="text-teal-900 py-8">Cars from</span> {brandId} Brand
+        <span className="text-cyan-900 py-8">Cars from</span> {brandId} Brand
       </h1>
       {notFound ? (
         <div className="m-8 p-8 text-center">

@@ -64,12 +64,12 @@ const HeroSlider = () => {
                 }`}
               >
                 <div className="slider-content p-5 md:p-12">
-                  <h1 className="text-base md:text-lg md:font-semibold tracking-widest my-3 text-teal-400">
+                  <h1 className="text-base md:text-lg md:font-semibold tracking-widest my-3 text-cyan-400">
                     {slide.heading}
                   </h1>
                   <h1 className="text-4xl md:text-6xl font-semibold text-white">
                     We Provide You{" "}
-                    <p className="text-teal-400 font-bold">
+                    <p className="text-cyan-400 font-bold">
                       {slide.subHeading}
                     </p>{" "}
                   </h1>
@@ -78,7 +78,7 @@ const HeroSlider = () => {
                   </p>
                   <Link href="/viewCars">
                     <button
-                      className="btn bg-white  text-teal-600 mb-5"
+                      className="btn bg-white  text-cyan-600 mb-5"
                       onClick={() => console.log("Explore Cars clicked")}
                     >
                       Explore Cars
