@@ -9,14 +9,14 @@ const CarTypes = () => {
   const [showAllTypes, setShowAllTypes] = useState(false);
 
   const carTypes = [
-    { id: "Sedan", name: "Sedan", alt: "Sedan Car" },
-    { id: "Hatchback", name: "Hatchback", alt: "Hatchback Car" },
-    { id: "SUV", name: "SUV", alt: "SUV Car" },
-    { id: "Crossover", name: "Crossover", alt: "Crossover Car" },
-    { id: "Convertible", name: "Convertible", alt: "Convertible Car" },
-    { id: "Coupe", name: "Coupe", alt: "Coupe Car" },
-    { id: "Truck", name: "Truck", alt: "Truck" },
-    { id: "Van", name: "Van", alt: "Van" },
+    { id: "sedan", name: "Sedan", alt: "Sedan Car" },
+    { id: "hatchback", name: "Hatchback", alt: "Hatchback Car" },
+    { id: "suv", name: "SUV", alt: "SUV Car" },
+    { id: "crossover", name: "Crossover", alt: "Crossover Car" },
+    { id: "convertible", name: "Convertible", alt: "Convertible Car" },
+    { id: "coupe", name: "Coupe", alt: "Coupe Car" },
+    { id: "truck", name: "Truck", alt: "Truck" },
+    { id: "van", name: "Van", alt: "Van" },
   ];
 
   const visibleTypes = showAllTypes ? carTypes : carTypes.slice(0, 6);
