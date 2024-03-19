@@ -36,7 +36,7 @@ const CarTypes = () => {
             className="border p-2 sm:p-4 flex flex-col justify-center items-center bg-white shadow-2xl shadow-teal-500 rounded-2xl h-48 object-contain"
           >
             <Image
-              src={`/CarTypes/${type.id}.png`}
+              src={`/carTypes/${type.id}.png`}
               width={500}
               height={500}
               alt={type.alt}
