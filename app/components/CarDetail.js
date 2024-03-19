@@ -72,7 +72,7 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
         </div>
       </div>
       {/* Car details card */}
-      <div className="w-full md:w-1/2 shadow-2xl rounded-2xl overflow-hidden shadow-teal-50">
+      <div className="w-full md:w-1/2 shadow-lg rounded-2xl overflow-hidden shadow-teal-600">
         {/* Car details inside the card */}
         <div className="p-4">
           <h1 className="text-2xl font-bold mb-2 text-teal-500">Car Details</h1>

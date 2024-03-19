@@ -7,7 +7,7 @@ const HorizontalScrollCard = ({ car }) => {
   return (
     <Link
       href={`/viewCars/${car.id}`}
-      className="flex p-4 bg-white rounded-2xl shadow-2xl cursor-pointer"
+      className="flex p-4 bg-white rounded-2xl shadow-2xl cursor-pointer shadow-teal-500"
       style={{ width: "300px", height: "150px" }}
     >
       {/* Image Section */}

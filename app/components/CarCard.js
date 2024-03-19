@@ -5,7 +5,7 @@ import { FaCalendarAlt, FaGasPump } from "react-icons/fa";
 
 const CarCard = ({ car }) => {
   return (
-    <div className="p-4 bg-white rounded-2xl shadow-2xl transform transition-transform hover:scale-105 h-full flex flex-col">
+    <div className="p-4 bg-white rounded-2xl shadow-2xl shadow-teal-500 transform transition-transform hover:scale-105 h-full flex flex-col">
       <div>
         {/* Image div starts */}
         {car.imageUrls && car.imageUrls.length > 0 && (

@@ -37,7 +37,7 @@ const Brands = () => {
           <Link
             key={index}
             href={`/brands/${brand.name}`}
-            className="border p-2 sm:p-4 flex justify-center items-center bg-white shadow-2xl rounded-2xl h-36 object-contain"
+            className="border p-2 sm:p-4 flex justify-center items-center bg-white shadow-2xl shadow-teal-500  rounded-2xl h-36 object-contain"
           >
             <Image
               src={`/Brands/${brand.id}.png`}

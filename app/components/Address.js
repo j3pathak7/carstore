@@ -24,7 +24,7 @@ function Address() {
             <span className="text-teal-800">Where</span> to{" "}
             <span className="text-teal-800"> Find</span> Us
           </h1>
-          <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5 bg-white">
+          <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-teal-500  justify-center space-y-5 bg-white">
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">
               {" "}
               {/* Adjust text size for small devices */}
