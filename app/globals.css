@@ -85,17 +85,17 @@
   cursor: pointer;
   border-radius: 3px;
   font-weight: 400;
-  background-color: #0d9488;
+  background-color: #06b6d4;
 }
 
 .pagination .page-num:hover{
   background-color: #ffffff;
-  color: #0d9488;
+  color: #06b6d4;
 }
 
 .pagination .active{
   background-color: #ffffff;
-    color: #0d9488;
+    color: #06b6d4;
   padding:8px 15px
 }
 
@@ -118,8 +118,8 @@
 }
 
 .loader {
-  --c1: #0f766e;
-  --c2: #5eead4;
+  --c1: #155e75;
+  --c2: #a5f3fc;
   width: 40px;
   height: 80px;
   border-top: 4px solid var(--c1);
