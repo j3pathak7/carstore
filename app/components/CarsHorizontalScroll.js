@@ -29,7 +29,9 @@ const CarsHorizontalScroll = () => {
 
   return (
     <div className="text-center">
-      <h2 className="m-8 heading">Featured Cars</h2>
+      <h2 className="m-8 heading text-teal-600">
+        Featured <span className="text-teal-500">Cars</span>
+      </h2>
       <div className="flex overflow-x-auto p-4 space-x-4 hide-scrollbar">
         {carList.map((car) => (
           <div
