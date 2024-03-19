@@ -4,6 +4,7 @@ import { db } from "../config/firebase";
 import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
 import CarCard from "./CarCard";
 import ReactPaginate from "react-paginate";
+import Search from "./Search";
 
 const Cars = () => {
   const [carList, setCarList] = useState([]);
@@ -98,6 +99,7 @@ const Cars = () => {
       <h1 className="pb-4 heading text-cyan-500">
         <span className="text-cyan-700 py-8">List of</span> Cars
       </h1>
+      <Search />
       <div className="md:flex justify-between items-center mb-4 md:h-10">
         <div className="flex">
           <button
