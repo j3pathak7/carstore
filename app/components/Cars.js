@@ -116,7 +116,7 @@ const Cars = () => {
         {showFilter && (
           <div className="flex flex-wrap gap-4 justify-center">
             <div className="m-4">
-              <label htmlFor="brandFilter" className="mr-2">
+              <label htmlFor="brandFilter" className="mr-2 text-teal-50">
                 Brand:
               </label>
               <select
@@ -133,7 +133,7 @@ const Cars = () => {
               </select>
             </div>
             <div className=" flex justify-center  items-center md:m-4">
-              <label htmlFor="transmissionFilter" className="mr-2">
+              <label htmlFor="transmissionFilter" className="mr-2 text-teal-50">
                 Transmission:
               </label>
               <select
@@ -151,7 +151,7 @@ const Cars = () => {
         )}
         {showSort && (
           <div className="m-4 flex justify-center items-center">
-            <label htmlFor="priceSort" className="mr-2">
+            <label htmlFor="priceSort" className="mr-2 text-teal-50">
               Price:
             </label>
             <select
