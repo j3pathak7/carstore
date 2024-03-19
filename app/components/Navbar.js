@@ -45,9 +45,9 @@ function NavBar() {
       <div className="self-center flex gap-2">
         <Link
           href="/"
-          className="self-center font-semibold text-lg lg:text-xl text-teal-400 flex items-center"
+          className="self-center text-lg lg:text-xl text-teal-400 flex items-center"
         >
-          THE CAR STORE
+          The Car Store
         </Link>
       </div>
 

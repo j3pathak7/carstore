@@ -1,6 +1,6 @@
+"use client";
 import HeroSlider from "./components/HeroSlider";
-
-import CarCards from "./components/CarCardAll";
+import { useEffect } from "react";
 import Address from "./components/Address";
 import SoldCars from "./components/SoldCars";
 import Brands from "./components/Brands";
@@ -8,12 +8,22 @@ import Cars from "./components/Cars";
 import CarsHorizontalScroll from "./components/CarsHorizontalScroll";
 import Image from "next/image";
 import CarTypes from "./components/CarTypes";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
     <main className="">
       <div className="">
-        <div className=" mt-8 shadow-2xl rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white">
+        <div
+          className=" mt-16 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-teal-500"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <Image
             src="/logo.png"
             width={200}
@@ -21,7 +31,9 @@ export default function Home() {
             alt="Picture of the author"
           />
         </div>
-        <CarsHorizontalScroll />
+        <div data-aos="fade-left" data-aos-duration="2000">
+          <CarsHorizontalScroll />
+        </div>
         <Brands />
         <CarTypes />
         {/* <Cars /> */}
