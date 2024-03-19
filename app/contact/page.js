@@ -47,20 +47,23 @@ function ContactUs() {
 
   return (
     <div className=" m-8">
-      <h1 className="text-center heading">
-        <span className="text-teal-600 py-8">Contact</span> Us
+      <h1 className="text-center heading text-teal-700">
+        <span className="text-teal-500 py-8">Contact</span> Us
       </h1>
       <div className="flex flex-col lg:flex-row py-5">
         <div className="lg:w-1/2 lg:p-10">
           <div className="mb-8 lg:mb-0">
             <h1 className="heading">
-              <span className="text-teal-800">Where</span> to{" "}
-              <span className="text-teal-800"> Find</span> Us
+              <span className="text-teal-700">Where</span> to{" "}
+              <span className="text-teal-500"> Find</span> Us
             </h1>
             <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5 bg-white">
-              <div className="flex gap-4">
+              <div className="flex gap-4 text-sm md:text-base lg:text-lg">
                 <FaPhoneAlt className="self-center text-teal-800" />
-                <a href="tel:+919706713213">9706713213</a>
+                <div className="flex gap-2">
+                  <a href="tel:+918135843184">8135843184</a>,
+                  <a href="tel:+919706713213">9706713213</a>
+                </div>
               </div>
               <div className="flex gap-4">
                 <FaMapMarker className="self-center text-teal-800" />
@@ -83,8 +86,10 @@ function ContactUs() {
         </div>
         <div className="lg:w-1/2 lg:p-10">
           <div className="space-y-2">
-            <h1 className="subheading">Get in touch</h1>
-            <p>
+            <h1 className="subheading text-teal-700">
+              Get in <span className="text-teal-500">touch</span>
+            </h1>
+            <p className="text-teal-50">
               Feel free to reach out to us for any inquiries or assistance. We
               value your input and are here to help.
             </p>

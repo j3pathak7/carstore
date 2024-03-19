@@ -95,8 +95,8 @@ const Cars = () => {
 
   return (
     <div className="container mx-auto p-8">
-      <h1 className="pb-4 heading">
-        <span className="text-teal-500 py-8">List of</span> Cars
+      <h1 className="pb-4 heading text-teal-500">
+        <span className="text-teal-700 py-8">List of</span> Cars
       </h1>
       <div className="md:flex justify-between items-center mb-4 md:h-10">
         <div className="flex">
