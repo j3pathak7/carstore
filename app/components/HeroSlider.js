@@ -3,13 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "@/app/style/HeroSlider.css";
 import Image from "next/image";
 import Link from "next/link";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const HeroSlider = () => {
-  useEffect(() => {
-    Aos.init();
-  });
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
@@ -64,17 +59,11 @@ const HeroSlider = () => {
             {slides.map((slide, index) => (
               <div
                 key={index}
-                data-aos="fade-up"
-                data-aos-duration="1500"
                 className={`carousel-item d-flex justify-start items-center relative h-full w-full ${
                   index === currentSlide ? "" : "hidden"
                 }`}
               >
-                <div
-                  className="slider-content p-5 md:p-12"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
+                <div className="slider-content p-5 md:p-12">
                   <h1 className="text-base md:text-lg md:font-semibold tracking-widest my-3 text-teal-400">
                     {slide.heading}
                   </h1>
