@@ -30,14 +30,14 @@ const CarTypes = () => {
       <h1
         className="heading text-center m-8 p-8 "
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
       >
         Choose by Car Type:
       </h1>
       <div
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8"
         data-aos="fade-up"
-        data-aos-duration="1000"
+        data-aos-duration="500"
       >
         {visibleTypes.map((type) => (
           <Link
@@ -67,7 +67,7 @@ const CarTypes = () => {
         <div
           className="flex justify-center"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="500"
         >
           <button
             onClick={() => setShowAllTypes(true)}

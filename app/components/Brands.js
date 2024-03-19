@@ -62,7 +62,7 @@ const Brands = () => {
         <div
           className="flex justify-center"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="500"
         >
           <button
             onClick={() => setShowAllBrands(true)}

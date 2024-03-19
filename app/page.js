@@ -8,22 +8,12 @@ import Cars from "./components/Cars";
 import CarsHorizontalScroll from "./components/CarsHorizontalScroll";
 import Image from "next/image";
 import CarTypes from "./components/CarTypes";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 export default function Home() {
-  useEffect(() => {
-    Aos.init();
-  });
-
   return (
     <main className="">
       <div className="">
-        <div
-          className=" my-16 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-teal-500"
-          data-aos="fade-right"
-          data-aos-duration="2000"
-        >
+        <div className=" my-16 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-teal-500">
           <Image
             src="/logo.png"
             width={200}
@@ -31,7 +21,7 @@ export default function Home() {
             alt="Picture of the author"
           />
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000">
+        <div>
           <CarsHorizontalScroll />
         </div>
         <Brands />

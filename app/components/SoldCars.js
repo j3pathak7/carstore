@@ -73,7 +73,7 @@ const SoldCars = () => {
       <h1
         className="heading pt-4 px-6 text-teal-700"
         data-aos="fade-up"
-        data-aos-duration="1500"
+        data-aos-duration="500"
       >
         Our <span className="text-teal-500">Sold</span> Cars
       </h1>
@@ -81,7 +81,7 @@ const SoldCars = () => {
       <div
         className="glide-01 relative w-full p-8 "
         data-aos="fade-up"
-        data-aos-duration="1500"
+        data-aos-duration="500"
       >
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 ">
