@@ -142,6 +142,15 @@ function NavBar() {
           </li>
           <li>
             <Link
+              href="/finance"
+              onClick={closeSideBar}
+              className="hover:scale-105 duration-150 flex items-center gap-2"
+            >
+              {contact}Financing Options
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/reviews"
               onClick={closeSideBar}
               className="hover:scale-105 duration-150 flex items-center gap-2"

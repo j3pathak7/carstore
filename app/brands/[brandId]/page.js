@@ -50,11 +50,11 @@ const CarDetailsPage = ({ params }) => {
         <span className="text-teal-900 py-8">Cars from</span> {brandId} Brand
       </h1>
       {notFound ? (
-        <div className="m-8 p-8">
-          <p className="text-center text-red-500 text-2xl m-8 p-8">
+        <div className="m-8 p-8 text-center">
+          <p className="text-red-500 text-md sm:text-2xl sm:my-8 sm:p-8">
             No cars of this type found.
           </p>
-          <Link className="btn  w-56 md:w-80 mx-auto m-8" href={"/viewCars"}>
+          <Link className="btn w-56 md:w-80 my-8" href={"/viewCars"}>
             View More Cars
           </Link>
         </div>
