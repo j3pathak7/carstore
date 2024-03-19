@@ -7,6 +7,7 @@ import Brands from "./components/Brands";
 import Cars from "./components/Cars";
 import CarsHorizontalScroll from "./components/CarsHorizontalScroll";
 import Image from "next/image";
+import CarTypes from "./components/CarTypes";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         </div>
         <CarsHorizontalScroll />
         <Brands />
+        <CarTypes />
         {/* <Cars /> */}
         {/* <CarCards /> */}
 
