@@ -33,9 +33,14 @@ const Banks = () => {
     Aos.init();
   }, []);
 
+  const handleSeeLessClick = () => {
+    setShowAllBanks(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div data-aos="fade-up" data-aos-duration="2000">
-      <h1 className="heading text-center m-8 p-8">
+      <h1 className="heading text-center m-8 sm:m-16 p-8">
         We provide the following financing options
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8 ">
@@ -64,7 +69,7 @@ const Banks = () => {
       {showAllBanks && (
         <div className="flex justify-center">
           <button
-            onClick={() => setShowAllBanks(false)}
+            onClick={handleSeeLessClick}
             className="btn bg-white text-teal-600 rounded mb-32"
           >
             See Less

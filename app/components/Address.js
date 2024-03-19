@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaMapMarker, FaPhoneAlt } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 
@@ -17,7 +16,7 @@ function Address() {
         {/* Where to Find Us */}
         <div
           className="mb-8 lg:mb-0"
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="2000"
         >
           <h1 className="heading">

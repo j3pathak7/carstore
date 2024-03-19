@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { db } from "../config/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import Glide from "@glidejs/glide";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const SoldCars = () => {
   const [soldCars, setSoldCars] = useState([]);
@@ -58,13 +60,29 @@ const SoldCars = () => {
     }
   }, [loading]);
 
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
-    <div className="container mx-auto">
-      <h1 className="heading pt-4 px-6">
-        Our <span className="text-teal-800">Sold</span> Cars
+    <div
+      className="container mx-auto"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+    >
+      <h1
+        className="heading pt-4 px-6 text-teal-700"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        Our <span className="text-teal-500">Sold</span> Cars
       </h1>
 
-      <div className="glide-01 relative w-full p-8">
+      <div
+        className="glide-01 relative w-full p-8 "
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 ">
             {soldCars.map((car) => (
@@ -72,7 +90,9 @@ const SoldCars = () => {
                 <img
                   src={car.imageUrls}
                   alt={`Car ${car.id}`}
-                  className="m-auto h-60 md:h-96 object-contain" // Set height to 48px (300px)
+                  className="m-auto h-60 md:h-96 object-contain"
+                  data-aos="fade-up"
+                  data-aos-duration="1500" // Set height to 48px (300px)
                 />
               </li>
             ))}

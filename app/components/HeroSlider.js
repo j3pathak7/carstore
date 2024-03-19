@@ -3,8 +3,13 @@ import React, { useState, useEffect, useRef } from "react";
 import "@/app/style/HeroSlider.css";
 import Image from "next/image";
 import Link from "next/link";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const HeroSlider = () => {
+  useEffect(() => {
+    Aos.init();
+  });
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
@@ -52,18 +57,24 @@ const HeroSlider = () => {
   }, [currentSlide]); // Reset timer whenever currentSlide changes
 
   return (
-    <div className="hero-slider">
+    <div className="hero-slider" data-aos="fade-down" data-aos-duration="2000">
       <div className="lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1440px] mx-auto px-2 h-full">
         <div className="w-full lg:w-2/3 xl:w-1/2 h-full">
           <div className="carousel h-full w-full">
             {slides.map((slide, index) => (
               <div
                 key={index}
+                data-aos="fade-up"
+                data-aos-duration="1500"
                 className={`carousel-item d-flex justify-start items-center relative h-full w-full ${
                   index === currentSlide ? "" : "hidden"
                 }`}
               >
-                <div className="slider-content p-5 md:p-12">
+                <div
+                  className="slider-content p-5 md:p-12"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   <h1 className="text-base md:text-lg md:font-semibold tracking-widest my-3 text-teal-400">
                     {slide.heading}
                   </h1>

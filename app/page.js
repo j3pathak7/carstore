@@ -20,7 +20,7 @@ export default function Home() {
     <main className="">
       <div className="">
         <div
-          className=" mt-16 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-teal-500"
+          className=" my-16 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-teal-500"
           data-aos="fade-right"
           data-aos-duration="2000"
         >

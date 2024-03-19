@@ -10,6 +10,7 @@ import {
   AiOutlineInfoCircle,
   AiOutlineStar,
 } from "react-icons/ai";
+import { FaMoneyBill1Wave } from "react-icons/fa6";
 
 function NavBar() {
   const [sideBarWidth, setSideBarWidth] = useState("w-0");
@@ -23,6 +24,7 @@ function NavBar() {
   const about = <AiOutlineInfoCircle className="self-center text-teal-500" />;
   const contact = <AiOutlinePhone className="self-center text-teal-500" />;
   const reviews = <AiOutlineStar className="self-center text-teal-500" />;
+  const finance = <FaMoneyBill1Wave className="self-center text-teal-500" />;
 
   const toggleSideBar = () => {
     if (sideBarWidth === "w-0") {
@@ -82,7 +84,7 @@ function NavBar() {
             href="/finance"
             className="hover:scale-105 duration-150 flex items-center gap-2"
           >
-            {contact}Financing Options
+            {finance}Financing Options
           </Link>
         </li>
         <li>
@@ -139,7 +141,7 @@ function NavBar() {
               onClick={closeSideBar}
               className="hover:scale-105 duration-150 flex items-center gap-2"
             >
-              {contact}Financing Options
+              {finance}Financing Options
             </Link>
           </li>
           <li>

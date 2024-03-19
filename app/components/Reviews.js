@@ -43,9 +43,9 @@ function Reviews() {
     <div className="mt-32 mb-64  mx-4 md:mx-32">
       <div className=" p-4 space-y-2 mb-8">
         <h1 className="heading">
-          Our <span className="text-sky-800">Reviews</span>
+          Our <span className="text-teal-500">Reviews</span>
         </h1>
-        <p className="desc">What people say about us</p>
+        <p className="desc text-teal-50">What people say about us:</p>
       </div>
 
       <div

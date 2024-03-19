@@ -30,30 +30,29 @@ const Brands = () => {
   });
 
   return (
-    <div>
+    <div data-aos="fade-dowp" data-aos-duration="2000">
       <h1
-        className="heading text-center m-8 p-8"
-        data-aos="fade-down"
-        data-aos-duration="2000"
-      >
-        {" "}
-        Choose by Brand:{" "}
-      </h1>
-      <div
-        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8 "
+        className="heading text-center m-8 p-8 text-teal-700"
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
       >
+        Choose by <span className="text-teal-500">Brand:</span>
+      </h1>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8 ">
         {visibleBrands.map((brand, index) => (
           <Link
             key={index}
             href={`/brands/${brand.name}`}
+            data-aos="fade-up"
+            data-aos-duration="2000"
             className="border p-2 sm:p-4 flex justify-center items-center bg-white shadow-2xl shadow-teal-500  rounded-2xl h-36 object-contain"
           >
             <Image
               src={`/Brands/${brand.id}.png`}
               width={500}
               height={500}
+              data-aos="fade-up"
+              data-aos-duration="2000"
               alt={brand.alt}
             />
           </Link>

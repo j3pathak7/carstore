@@ -26,16 +26,30 @@ const CarTypes = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" data-aos-duration="2000">
-      <h1 className="heading text-center m-8 p-8">Choose by Car Type:</h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8">
+    <div>
+      <h1
+        className="heading text-center m-8 p-8 "
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        Choose by Car Type:
+      </h1>
+      <div
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         {visibleTypes.map((type) => (
           <Link
             key={type.id}
             href={`/carTypes/${type.name}`}
             className="border p-2 sm:p-4 flex flex-col justify-start items-center bg-white shadow-2xl shadow-teal-500 rounded-2xl h-32 md:h-36 object-contain m-2" // Changed justify-center to justify-start
           >
-            <div className="h-24 sm:h-28">
+            <div
+              className="h-24 sm:h-28"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <Image
                 src={`/carTypes/${type.id}.png`}
                 width={200}
@@ -50,7 +64,11 @@ const CarTypes = () => {
         ))}
       </div>
       {!showAllTypes && (
-        <div className="flex justify-center">
+        <div
+          className="flex justify-center"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <button
             onClick={() => setShowAllTypes(true)}
             className="btn bg-white text-teal-600 rounded mb-32"

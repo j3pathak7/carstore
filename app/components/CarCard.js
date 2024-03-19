@@ -1,11 +1,21 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { FaCalendarAlt, FaGasPump } from "react-icons/fa";
 
 const CarCard = ({ car }) => {
+  useEffect(() => {
+    Aos.init();
+  });
   return (
-    <div className="p-4 bg-white rounded-2xl shadow-2xl shadow-teal-500 transform transition-transform hover:scale-105 h-full flex flex-col">
+    <div
+      className="p-4 bg-white rounded-2xl shadow-2xl shadow-teal-500 transform transition-transform hover:scale-105 h-full flex flex-col"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div>
         {/* Image div starts */}
         {car.imageUrls && car.imageUrls.length > 0 && (
@@ -17,13 +27,15 @@ const CarCard = ({ car }) => {
               width={500}
               height={500}
               className="w-full object-contain"
+              data-aos="fade-up"
+              data-aos-duration="2500"
             />
           </div>
         )}
         {/* Image div ends */}
 
         {/* Details div starts */}
-        <div className="sm:mt-4">
+        <div className="sm:mt-4" data-aos="fade-up" data-aos-duration="2500">
           <strong className="mb-2 flex justify-center text-center">
             {car.carName}
           </strong>

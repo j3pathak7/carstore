@@ -8,13 +8,7 @@ import Footer from "./components/Footer";
 export const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
   display: "swap",
-});
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400"],
 });
 
 export const metadata = {
