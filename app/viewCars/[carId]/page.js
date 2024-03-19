@@ -37,7 +37,7 @@ const ViewCarsId = ({ params }) => {
   }, [carId]);
 
   return (
-    <div className="bg-gray-100">
+    <div className="">
       <CarDetailCard carDetails={carDetails} />
     </div>
   );

@@ -10,9 +10,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-gray-100">
-      <div className=" ">
-        <div className="flex justify-center object-contain mt-8">
+    <main className="">
+      <div className="">
+        <div className=" mt-8 shadow-2xl rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white">
           <Image
             src="/logo.png"
             width={200}

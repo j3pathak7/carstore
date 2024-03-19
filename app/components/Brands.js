@@ -1,7 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Brands = () => {
   const [showAllBrands, setShowAllBrands] = useState(false);
@@ -23,8 +25,12 @@ const Brands = () => {
 
   const visibleBrands = showAllBrands ? brands : brands.slice(0, 6);
 
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="2000">
       <h1 className="heading text-center m-8 p-8"> Choose by Brand: </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8">
         {visibleBrands.map((brand, index) => (
