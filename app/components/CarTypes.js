@@ -32,7 +32,7 @@ const CarTypes = () => {
         {visibleTypes.map((type) => (
           <Link
             key={type.id}
-            href={`/carTypes/${type.id}`}
+            href={`/carTypes/${type.name}`}
             className="border p-2 sm:p-4 flex flex-col justify-start items-center bg-white shadow-2xl shadow-teal-500 rounded-2xl h-32 md:h-36 object-contain m-2" // Changed justify-center to justify-start
           >
             <div className="h-24 sm:h-28">
