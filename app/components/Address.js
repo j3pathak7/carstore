@@ -26,11 +26,11 @@ function Address() {
           </h1>
           <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-teal-500  justify-center space-y-5 bg-white">
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">
-              {" "}
-              {/* Adjust text size for small devices */}
               <FaPhoneAlt className="self-center text-teal-800" />
-              <a href="tel:+918135843184">8135843184</a>,
-              <a href="tel:+919706713213">9706713213</a>
+              <div className="flex gap-2">
+                <a href="tel:+918135843184">8135843184</a>,
+                <a href="tel:+919706713213">9706713213</a>
+              </div>
             </div>
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">
               {" "}

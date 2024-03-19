@@ -1,10 +1,14 @@
-import { Inter } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
+import { Madimi } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+export const roboto_mono = Roboto_Mono({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable}`}>
+      <body className={`${roboto_mono.variable}`}>
         <div className="bg-gradient-to-r from-teal-950 to-black">
           <Navbar />
           {children}

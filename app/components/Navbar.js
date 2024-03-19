@@ -47,13 +47,6 @@ function NavBar() {
           href="/"
           className="self-center font-semibold text-lg lg:text-xl text-teal-400 flex items-center"
         >
-          <Image
-            src="/navLogo.jpeg"
-            width={50}
-            height={50}
-            alt="Picture of the author"
-            className="p-2"
-          />
           THE CAR STORE
         </Link>
       </div>
