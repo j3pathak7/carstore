@@ -33,15 +33,19 @@ const CarTypes = () => {
           <Link
             key={type.id}
             href={`/carTypes/${type.id}`}
-            className="border p-2 sm:p-4 flex flex-col justify-center items-center bg-white shadow-2xl shadow-teal-500 rounded-2xl h-48 object-contain"
+            className="border p-2 sm:p-4 flex flex-col justify-start items-center bg-white shadow-2xl shadow-teal-500 rounded-2xl h-32 md:h-36 object-contain m-2" // Changed justify-center to justify-start
           >
-            <Image
-              src={`/carTypes/${type.id}.png`}
-              width={500}
-              height={500}
-              alt={type.alt}
-            />
-            <p className="mt-2 text-center">{type.name}</p>
+            <div className="h-24 sm:h-28">
+              <Image
+                src={`/carTypes/${type.id}.png`}
+                width={200}
+                height={200}
+                alt={type.alt}
+                className="object-contain"
+              />
+            </div>
+            <p className="text-center text-teal-800 flex-grow">{type.name}</p>{" "}
+            {/* Added flex-grow */}
           </Link>
         ))}
       </div>
