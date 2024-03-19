@@ -1,11 +1,17 @@
-import Link from "next/link";
+"use client";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import Address from "../components/Address";
 import HeroSlider from "../components/HeroSlider";
+import { useEffect } from "react";
 
 function About() {
   const angle = <AiOutlineDoubleRight className="inline" />;
+  useEffect(() => {
+    Aos.init();
+  });
 
   return (
     <div>
@@ -14,8 +20,18 @@ function About() {
         <div className="container mx-auto">
           <div className="lg:h-[25rem] flex flex-col lg:flex-row">
             <div className="lg:w-1/2 p-4 flex flex-col justify-center space-y-5 my-5">
-              <h1 className="text-3xl font-semibold text-teal-500">About Us</h1>
-              <p className="leading-relaxed text-teal-50 pr-8">
+              <h1
+                className="text-3xl font-semibold text-teal-500"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                About Us
+              </h1>
+              <p
+                className="leading-relaxed text-teal-50 pr-8"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 Welcome to The Car Store, your premier destination for
                 top-quality, pre-owner cars. At The Car Store, we redefine the
                 concept of pre-owned vehicles by offering an exceptional
@@ -28,7 +44,11 @@ function About() {
                 Car Store, where premium quality meets affordability.
               </p>
             </div>
-            <div className="lg:w-1/2 border">
+            <div
+              className="lg:w-1/2 border"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <Image
                 src="/aboutCarStore.jpeg"
                 width={800}

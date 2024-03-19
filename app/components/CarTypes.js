@@ -37,7 +37,7 @@ const CarTypes = () => {
       <div
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8"
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
       >
         {visibleTypes.map((type) => (
           <Link
@@ -48,7 +48,7 @@ const CarTypes = () => {
             <div
               className="h-24 sm:h-28"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="500"
             >
               <Image
                 src={`/carTypes/${type.id}.png`}
@@ -67,7 +67,7 @@ const CarTypes = () => {
         <div
           className="flex justify-center"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <button
             onClick={() => setShowAllTypes(true)}

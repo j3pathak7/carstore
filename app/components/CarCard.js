@@ -27,15 +27,13 @@ const CarCard = ({ car }) => {
               width={500}
               height={500}
               className="w-full object-contain"
-              data-aos="fade-up"
-              data-aos-duration="2500"
             />
           </div>
         )}
         {/* Image div ends */}
 
         {/* Details div starts */}
-        <div className="sm:mt-4" data-aos="fade-up" data-aos-duration="2500">
+        <div className="sm:mt-4">
           <strong className="mb-2 flex justify-center text-center">
             {car.carName}
           </strong>

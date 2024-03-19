@@ -44,7 +44,7 @@ const Brands = () => {
             key={index}
             href={`/brands/${brand.name}`}
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="500"
             className="border p-2 sm:p-4 flex justify-center items-center bg-white shadow-2xl shadow-teal-500  rounded-2xl h-36 object-contain"
           >
             <Image
@@ -52,7 +52,7 @@ const Brands = () => {
               width={500}
               height={500}
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="500"
               alt={brand.alt}
             />
           </Link>
