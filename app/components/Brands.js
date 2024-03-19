@@ -29,7 +29,6 @@ const Brands = () => {
   }, []);
 
   const handleLinkClick = (event) => {
-    event.preventDefault(); // Prevent default behavior of anchor tag
     window.scrollTo(0, 0); // Scroll to the top of the page
   };
 
