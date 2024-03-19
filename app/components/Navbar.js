@@ -19,10 +19,10 @@ function NavBar() {
   );
   const [menuButton, setMenuButton] = useState(menu);
 
-  const home = <FaCar className="self-center text-teal-700" />;
-  const about = <AiOutlineInfoCircle className="self-center text-teal-700" />;
-  const contact = <AiOutlinePhone className="self-center text-teal-700" />;
-  const reviews = <AiOutlineStar className="self-center text-teal-700" />;
+  const home = <FaCar className="self-center text-teal-500" />;
+  const about = <AiOutlineInfoCircle className="self-center text-teal-500" />;
+  const contact = <AiOutlinePhone className="self-center text-teal-500" />;
+  const reviews = <AiOutlineStar className="self-center text-teal-500" />;
 
   const toggleSideBar = () => {
     if (sideBarWidth === "w-0") {
@@ -45,7 +45,7 @@ function NavBar() {
       <div className="self-center flex gap-2">
         <Link
           href="/"
-          className="self-center font-semibold text-lg lg:text-xl text-teal-800 flex items-center"
+          className="self-center font-semibold text-lg lg:text-xl text-teal-400 flex items-center"
         >
           <Image
             src="/navLogo.jpeg"

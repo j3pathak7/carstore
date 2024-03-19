@@ -46,9 +46,9 @@ function ContactUs() {
   };
 
   return (
-    <div className="bg-gray-100 m-8">
+    <div className=" m-8">
       <h1 className="text-center heading">
-        <span className="text-teal-900 py-8">Contact</span> Us
+        <span className="text-teal-600 py-8">Contact</span> Us
       </h1>
       <div className="flex flex-col lg:flex-row py-5">
         <div className="lg:w-1/2 lg:p-10">
@@ -57,7 +57,7 @@ function ContactUs() {
               <span className="text-teal-800">Where</span> to{" "}
               <span className="text-teal-800"> Find</span> Us
             </h1>
-            <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5">
+            <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5 bg-white">
               <div className="flex gap-4">
                 <FaPhoneAlt className="self-center text-teal-800" />
                 <a href="tel:+919706713213">9706713213</a>

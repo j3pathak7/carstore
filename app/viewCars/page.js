@@ -5,7 +5,7 @@ import Cars from "../components/Cars";
 const page = () => {
   return (
     <div>
-      <div className="bg-gray-100">
+      <div className="">
         <Cars />
         {/* <CarCards /> */}
       </div>
