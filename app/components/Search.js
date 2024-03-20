@@ -33,7 +33,7 @@ const Search = () => {
         >
           <input
             id="search-bar"
-            placeholder="your keyword here"
+            placeholder="Search for a car"
             name="q"
             value={searchTerm}
             onChange={handleSearchChange}
