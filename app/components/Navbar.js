@@ -33,7 +33,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="stick bg-black top-0 text-cyan-50 backdrop-blur-lg z-20 flex justify-between px-5 md:px-10 lg:px-20 xl:px-36 py-2 lg:py-4 shadow-md">
+    <nav className="sticky bg-black top-0 text-cyan-50 backdrop-blur-lg z-20 flex justify-between px-5 md:px-10 lg:px-20 xl:px-36 py-2 lg:py-4 shadow-md">
       {/* Logo */}
       <div className="self-center flex items-center">
         <Link
