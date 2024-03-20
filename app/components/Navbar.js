@@ -33,14 +33,20 @@ function NavBar() {
   };
 
   return (
-    <nav className="sticky top-0 text-cyan-50 backdrop-blur-lg z-20 flex justify-between px-5 md:px-10 lg:px-20 xl:px-36 py-2 lg:py-4 shadow-md">
+    <nav className="stick bg-black top-0 text-cyan-50 backdrop-blur-lg z-20 flex justify-between px-5 md:px-10 lg:px-20 xl:px-36 py-2 lg:py-4 shadow-md">
       {/* Logo */}
-      <div className="self-center flex gap-2">
+      <div className="self-center flex items-center">
         <Link
           href="/"
-          className="self-center text-lg lg:text-xl text-cyan-400 flex items-center"
+          className="self-center text-lg lg:text-xl text-cyan-400"
+          style={{ textTransform: "uppercase" }}
         >
-          The Car Store
+          <span style={{ fontSize: "1.5em" }}>T</span>
+          <span style={{ fontSize: "1em", marginRight: "0.3em" }}>HE</span>
+          <span style={{ fontSize: "1.5em" }}>C</span>
+          <span style={{ fontSize: "1em", marginRight: "0.3em" }}>AR</span>
+          <span style={{ fontSize: "1.5em" }}>S</span>
+          <span style={{ fontSize: "1em", marginRight: "0.3em" }}>TORE</span>
         </Link>
       </div>
 

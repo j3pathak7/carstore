@@ -29,7 +29,7 @@ const CarsHorizontalScroll = () => {
   }, []);
 
   return (
-    <div className="text-center">
+    <div className="text-center lg:mx-36">
       <h2 className="m-8 heading text-cyan-600">
         Featured <span className="text-cyan-500">Cars</span>
       </h2>
