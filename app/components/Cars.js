@@ -95,9 +95,9 @@ const Cars = () => {
     sortByPrice !== null;
 
   return (
-    <div className="container mx-auto p-8">
-      <h1 className="pb-4 heading text-cyan-500">
-        <span className="text-cyan-700 py-8">List of</span> Cars
+    <div className="container mx-auto px-8">
+      <h1 className="pb-4 heading text-cyan-500 pt-2">
+        <span className="text-cyan-700">List of</span> Cars
       </h1>
       <Search />
       <div className="md:flex justify-between items-center mb-4 md:h-10">
