@@ -9,7 +9,11 @@ const ViewCarsId = ({ params }) => {
   const [carDetails, setCarDetails] = useState(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Smooth scroll to the top when the component mounts
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
     const fetchData = async () => {
       try {
         if (!carId) {
