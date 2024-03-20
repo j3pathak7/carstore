@@ -15,7 +15,7 @@ export default function Home() {
     <main className="">
       <div className="">
         <Search />
-        <div className=" my-16 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-cyan-500">
+        <div className=" my-8 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-cyan-500">
           <Image
             src="/logo.png"
             width={200}
