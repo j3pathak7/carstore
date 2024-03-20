@@ -9,6 +9,7 @@ const ViewCarsId = ({ params }) => {
   const [carDetails, setCarDetails] = useState(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchData = async () => {
       try {
         if (!carId) {
