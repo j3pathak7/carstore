@@ -1,11 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import { db } from "../../config/firebase";
-import { getDoc, doc } from "firebase/firestore";
+import { getDoc, doc, collection, addDoc } from "firebase/firestore";
 import { AiOutlineSend } from "react-icons/ai";
-import { useForm, ValidationError } from "@formspree/react";
-import { FaSpinner, FaPhoneAlt, FaMapMarker } from "react-icons/fa";
-import { AiFillMail } from "react-icons/ai";
+import { FaSpinner } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const ViewOrderId = ({ params }) => {
@@ -16,35 +14,6 @@ const ViewOrderId = ({ params }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [delivery, setDelivery] = useState(send);
-  const [state, handleSubmit] = useForm("xvoegepb");
-
-  const handleFormSubmit = async (e) => {
-    e.preventDefault();
-    setDelivery(spinner);
-
-    try {
-      const res = await fetch("https://formspree.io/f/mdoqlpwn", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, phone }),
-      });
-
-      const data = await res.json();
-      if (data.ok) {
-        alert("Your message has been sent!");
-        toast.success(data.message);
-      } else {
-        toast.error(data.message);
-      }
-
-      setDelivery(send);
-    } catch (error) {
-      toast.error("An error occurred while sending the message.");
-      setDelivery(send);
-    }
-  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -54,7 +23,7 @@ const ViewOrderId = ({ params }) => {
           return;
         }
 
-        const orderRef = doc(db, "cars", orderId);
+        const orderRef = doc(db, "cars", orderId); // Assuming order details are stored in the "cars" collection (change if needed)
         const docSnapshot = await getDoc(orderRef);
 
         if (docSnapshot.exists()) {
@@ -74,12 +43,42 @@ const ViewOrderId = ({ params }) => {
     fetchData();
   }, [orderId]);
 
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setDelivery(spinner);
+
+    try {
+      const orderData = {
+        orderId, // Include orderId in the order data
+        carName: orderDetails.carName, // Include carName from orderDetails
+        name,
+        phone,
+      };
+
+      const orderRef = collection(db, "orders");
+      const newOrder = await addDoc(orderRef, orderData);
+
+      alert("Your order has been placed!");
+      toast.success("Order placed successfully with ID: " + newOrder.id);
+
+      setName("");
+      setPhone("");
+      setDelivery(send);
+    } catch (error) {
+      toast.error("An error occurred while placing the order.");
+      setDelivery(send);
+    }
+  };
+
   return (
     <div className="text-cyan-50 m-8 md:m-32">
       {orderDetails ? (
         <div>
           <h1>Order Details</h1>
-          <p>Order ID: {orderDetails.carName}</p>
+          <p>
+            Order ID: {orderDetails.carName} (replace with relevant field)
+          </p>{" "}
+          {/* Update based on your data structure */}
           <p>Please give your name and phone number</p>
           <form
             onSubmit={handleFormSubmit}
@@ -103,11 +102,6 @@ const ViewOrderId = ({ params }) => {
               placeholder="Phone *"
               required
               className="focus:outline-none focus:border-cyan-800 bg-white"
-            />
-            <ValidationError
-              prefix="Phone"
-              field="phone"
-              errors={state.errors}
             />
             <button
               type="submit"
