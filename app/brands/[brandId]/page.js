@@ -57,7 +57,7 @@ const CarDetailsPage = ({ params }) => {
           <p className="text-red-500 text-md sm:text-2xl sm:my-8 sm:p-8">
             No cars of this type found.
           </p>
-          <Link className="btn w-56 md:w-80 my-8" href={"/viewCars"}>
+          <Link className="btn w-56 md:w-80 my-8 mx-auto" href={"/viewCars"}>
             View More Cars
           </Link>
         </div>

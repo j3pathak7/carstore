@@ -16,6 +16,15 @@ const ViewOrderId = ({ params }) => {
   const [delivery, setDelivery] = useState(send);
 
   useEffect(() => {
+    const scrollToTop = () => {
+      const element = document.documentElement || document.body;
+      element.scrollIntoView({ behavior: "smooth" });
+    };
+
+    scrollToTop();
+  }, []);
+
+  useEffect(() => {
     const fetchData = async () => {
       try {
         if (!orderId) {
@@ -59,8 +68,8 @@ const ViewOrderId = ({ params }) => {
       const orderRef = collection(db, "orders");
       const newOrder = await addDoc(orderRef, orderData);
 
-      alert("Your order has been placed!");
       toast.success("Order placed successfully with ID: " + newOrder.id);
+      window.location.href = "/order";
 
       setName("");
       setPhone("");
@@ -74,16 +83,23 @@ const ViewOrderId = ({ params }) => {
   return (
     <div className="text-cyan-50 m-8 md:m-32">
       {orderDetails ? (
-        <div>
-          <h1>Order Details</h1>
-          <p>
-            Order ID: {orderDetails.carName} (replace with relevant field)
-          </p>{" "}
-          {/* Update based on your data structure */}
-          <p>Please give your name and phone number</p>
+        <div className="text-sm md:text-lg">
+          <h1 className="heading py-8">Order Details</h1>
+          <div className="flex items-center">
+            <img
+              src={orderDetails.imageUrls[1]}
+              alt="Car"
+              className="w-20 h-auto mr-4 rounded-md"
+            />
+            <p>
+              Order Name:{" "}
+              <span className="text-cyan-500">{orderDetails.carName}</span>
+            </p>
+          </div>
+          <p className="py-8">Please provide your name and phone number:</p>
           <form
             onSubmit={handleFormSubmit}
-            className="my-10 text-cyan-950  text-sm lg:text-md grid grid-cols-2 gap-6 [&>*]:duration-150 [&>*]:border-2 [&>*]:py-3 [&>*]:px-4 [&>*]:rounded-lg [&>*]:border-cyan-700 "
+            className="mt-8 mb-28 text-cyan-950  text-sm lg:text-md grid  grid-cols-2 gap-6 [&>*]:duration-150 [&>*]:border-2 [&>*]:py-3 [&>*]:px-4 [&>*]:rounded-lg [&>*]:border-cyan-700 "
           >
             <input
               type="text"
