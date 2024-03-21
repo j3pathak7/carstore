@@ -14,7 +14,7 @@ const Page = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="text-center heading m-8 lg:m-16">
-        <div>Your Order Has Been Placed</div>
+        <div>Your Order Has Been Placed. We will get back to you shortly.</div>
 
         <Link className="btn w-56 md:w-80 my-8 mx-auto" href={"/viewCars"}>
           View More Cars

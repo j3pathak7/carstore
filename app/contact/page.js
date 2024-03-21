@@ -57,8 +57,8 @@ function ContactUs() {
               <span className="text-cyan-700">Where</span> to{" "}
               <span className="text-cyan-500"> Find</span> Us
             </h1>
-            <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5 bg-white">
-              <div className="flex gap-4 text-sm md:text-base lg:text-lg">
+            <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5 bg-white text-sm md:text-md">
+              <div className="flex gap-4 text-sm md:text-base ">
                 <FaPhoneAlt className="self-center text-cyan-800" />
                 <div className="flex gap-2">
                   <a href="tel:+918135843184">8135843184</a>,
