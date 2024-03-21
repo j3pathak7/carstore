@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import Confetti from "js-confetti";
+import Address from "../components/Address";
 
 const Page = () => {
   // Function to trigger confetti effect
@@ -18,6 +19,7 @@ const Page = () => {
         <Link className="btn w-56 md:w-80 my-8 mx-auto" href={"/viewCars"}>
           View More Cars
         </Link>
+        <Address />
       </div>
     </div>
   );
