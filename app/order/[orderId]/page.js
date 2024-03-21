@@ -32,7 +32,7 @@ const ViewOrderId = ({ params }) => {
           return;
         }
 
-        const orderRef = doc(db, "cars", orderId); // Assuming order details are stored in the "cars" collection (change if needed)
+        const orderRef = doc(db, "cars", orderId);
         const docSnapshot = await getDoc(orderRef);
 
         if (docSnapshot.exists()) {
@@ -57,12 +57,16 @@ const ViewOrderId = ({ params }) => {
     setDelivery(spinner);
 
     try {
+      const currentDateTime = new Date();
       const orderData = {
-        orderId, // Include orderId in the order data
-        carName: orderDetails.carName, // Include carName from orderDetails
+        orderId,
+        carName: orderDetails.carName,
         name,
         phone,
-        imageUrl: orderDetails.imageUrls[1], // Include the second image URL from carDetails
+        imageUrl: orderDetails.imageUrls[1],
+        // Store date and time separately
+        submissionDate: currentDateTime.toLocaleDateString(), // Store date
+        submissionTime: currentDateTime.toLocaleTimeString(), // Store time
       };
 
       const orderRef = collection(db, "orders");

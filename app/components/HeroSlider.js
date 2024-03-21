@@ -11,14 +11,14 @@ const HeroSlider = () => {
       id: "slide1",
       heading: "Welcome to The Car Store",
       subHeading: "Better Price",
-      description: "We provide you expensive brand car at just a price.",
+      description: "We offer cars with superior performance.",
       imageUrl: "/car1.jpeg",
     },
     {
       id: "slide2",
       heading: "Welcome to The Car Store",
       subHeading: "Better Quality",
-      description: "We provide qualityful branded car.",
+      description: "Choose from our wide selection of cars.",
       imageUrl: "/car2.jpeg",
     },
     {

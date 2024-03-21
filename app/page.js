@@ -1,10 +1,8 @@
 "use client";
 import HeroSlider from "./components/HeroSlider";
-import { useEffect } from "react";
 import Address from "./components/Address";
 import SoldCars from "./components/SoldCars";
 import Brands from "./components/Brands";
-import Cars from "./components/Cars";
 import CarsHorizontalScroll from "./components/CarsHorizontalScroll";
 import Image from "next/image";
 import CarTypes from "./components/CarTypes";
