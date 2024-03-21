@@ -30,7 +30,9 @@ export default function RootLayout({ children }) {
         <div className="bg-gradient-to-r from-cyan-950 to-black">
           <Navbar />
           {children}
-          <Footer />
+          <div className="mt-32">
+            <Footer />
+          </div>
         </div>
       </body>
     </html>
