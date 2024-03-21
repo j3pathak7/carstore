@@ -12,8 +12,8 @@ const Page = () => {
   }, []); // Empty dependency array to run the effect only once when the component mounts
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <div className="text-center heading">
+    <div className="flex flex-col items-center justify-center">
+      <div className="text-center heading m-8 lg:m-16">
         <div>Your Order Has Been Placed</div>
 
         <Link className="btn w-56 md:w-80 my-8 mx-auto" href={"/viewCars"}>
