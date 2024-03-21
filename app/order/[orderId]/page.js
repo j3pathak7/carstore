@@ -53,6 +53,7 @@ const ViewOrderId = ({ params }) => {
         carName: orderDetails.carName, // Include carName from orderDetails
         name,
         phone,
+        imageUrl: orderDetails.imageUrls[1], // Include the second image URL from carDetails
       };
 
       const orderRef = collection(db, "orders");
