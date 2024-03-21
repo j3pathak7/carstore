@@ -16,7 +16,7 @@ import {
 } from "react-icons/fa";
 import Loading from "./Loading";
 
-const CarDetailCard = ({ carDetails, onGoBack }) => {
+const CarDetailCard = ({ carDetails, carId }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [otherImages, setOtherImages] = useState([]);
 
@@ -192,8 +192,8 @@ const CarDetailCard = ({ carDetails, onGoBack }) => {
 
           {/* Go back button */}
           <div>
-            <Link href="/contact" className="btn my-4 w-full mx-auto">
-              Buy / Exchange
+            <Link href={`/order/${carId}`} className="btn my-4 w-full mx-auto">
+              Place Order
             </Link>
             <button
               type="button" // Use button element for history navigation

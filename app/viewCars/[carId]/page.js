@@ -43,7 +43,7 @@ const ViewCarsId = ({ params }) => {
 
   return (
     <div className="">
-      <CarDetailCard carDetails={carDetails} />
+      <CarDetailCard carDetails={carDetails} carId={carId} />
     </div>
   );
 };

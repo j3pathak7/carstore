@@ -22,7 +22,7 @@ function ContactUs() {
     setDelivery(spinner);
 
     try {
-      const res = await fetch("https://formspree.io/f/xvoegepb", {
+      const res = await fetch("https://formspree.io/f/mayrdlpy", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -103,7 +103,7 @@ function ContactUs() {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Name"
+              placeholder="Name *"
               required
               className="focus:outline-none focus:border-cyan-800 bg-white"
             />
@@ -113,7 +113,6 @@ function ContactUs() {
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               placeholder="Subject"
-              required
               className="focus:outline-none focus:border-cyan-800 bg-white"
             />
             <input
@@ -122,7 +121,6 @@ function ContactUs() {
               value={email}
               onChange={(e) => setMail(e.target.value)}
               placeholder="Email"
-              required
               className="focus:outline-none focus:border-cyan-800 bg-white"
             />
             <input
@@ -131,7 +129,7 @@ function ContactUs() {
               pattern="[0-9]{10}"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              placeholder="Phone"
+              placeholder="Phone *"
               required
               className="focus:outline-none focus:border-cyan-800 bg-white"
             />
@@ -144,7 +142,7 @@ function ContactUs() {
               value={message}
               name="message"
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Message"
+              placeholder="Message *"
               required
               className="col-span-2 focus:outline-none focus:border-cyan-800 h-32 bg-white"
             ></textarea>
