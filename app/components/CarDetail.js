@@ -122,9 +122,9 @@ const CarDetailCard = ({ carDetails, carId }) => {
               </p>
               <p>
                 <FaCog className="inline mr-2" />
-                Type:{" "}
+                Fuel Type:{" "}
                 <span className="text-cyan-500 font-bold">
-                  {carDetails.type}
+                  {carDetails.fuelType}
                 </span>
               </p>
               <p>
@@ -141,27 +141,7 @@ const CarDetailCard = ({ carDetails, carId }) => {
                   {carDetails.serviceHistory}
                 </span>
               </p>
-              <p>
-                <FaShieldAlt className="inline mr-2" />
-                Insurance:{" "}
-                <span className="text-cyan-500 font-bold">
-                  {carDetails.insurance}
-                </span>
-              </p>
-              <p>
-                <FaExchangeAlt className="inline mr-2" />
-                Exchange:{" "}
-                <span className="text-cyan-500 font-bold">
-                  {carDetails.exchange}
-                </span>
-              </p>
-              <p>
-                <FaHandHoldingUsd className="inline mr-2" />
-                Finance:{" "}
-                <span className="text-cyan-500 font-bold">
-                  {carDetails.finance}
-                </span>
-              </p>
+
               <p>
                 <FaMapMarkerAlt className="inline mr-2" />
                 Registration Place:{" "}
@@ -169,18 +149,12 @@ const CarDetailCard = ({ carDetails, carId }) => {
                   {carDetails.registrationPlace}
                 </span>
               </p>
-              <p>
-                <FaMapMarkerAlt className="inline mr-2" />
-                Registration Transfer:{" "}
-                <span className="text-cyan-500 font-bold">
-                  {carDetails.registrationTransfer}
-                </span>
-              </p>
+
               <p>
                 <FaCar className="inline mr-2" />
                 Ran:{" "}
                 <span className="text-cyan-500 font-bold">
-                  {carDetails.ran} kms
+                  {carDetails.kmDriven} kms
                 </span>
               </p>
             </div>
@@ -194,6 +168,12 @@ const CarDetailCard = ({ carDetails, carId }) => {
           <div>
             <Link href={`/order/${carId}`} className="btn my-4 w-full mx-auto">
               Place Order
+            </Link>
+            <Link
+              href={`https://wa.me/8135843184`}
+              className="btnWA my-4 w-full mx-auto text-center"
+            >
+              Chat on WhatsApp
             </Link>
             <button
               type="button" // Use button element for history navigation

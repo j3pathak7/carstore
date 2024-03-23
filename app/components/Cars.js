@@ -15,7 +15,7 @@ const Cars = () => {
   const [filteredTransmission, setFilteredTransmission] = useState(null);
   const [sortByPrice, setSortByPrice] = useState(null);
   const [pageNumber, setPageNumber] = useState(0);
-  const carsPerPage = 3;
+  const carsPerPage = 6;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -194,7 +194,7 @@ const Cars = () => {
           breakLabel="..."
           nextLabel=">"
           onPageChange={changePage}
-          pageRangeDisplayed={3}
+          pageRangeDisplayed={4}
           pageCount={pageCount}
           previousLabel="<"
           renderOnZeroPageCount={null}

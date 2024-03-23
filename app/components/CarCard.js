@@ -12,7 +12,7 @@ const CarCard = ({ car }) => {
   });
   return (
     <div
-      className="p-4 bg-white rounded-2xl shadow-2xl shadow-teal-500 transform transition-transform hover:scale-105 h-full flex flex-col"
+      className="p-4 bg-white rounded-2xl shadow-2xl shadow-teal-500 transform transition-transform hover:scale-105 h-full flex flex-col text-cyan-800"
       data-aos="fade-up"
       data-aos-duration="1500"
     >
@@ -45,7 +45,7 @@ const CarCard = ({ car }) => {
           </div>
           <div className="flex justify-center mb-2">
             <FaGasPump className="mr-1" />
-            <p className="text-sm">Fuel Type: {car.type}</p>
+            <p className="text-sm">Fuel Type: {car.fuelType}</p>
           </div>
           <strong className="text-lg mb-2 flex justify-center">
             Price: {car.price} Lakhs

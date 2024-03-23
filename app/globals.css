@@ -42,6 +42,11 @@
 .btn {
   @apply flex border-none gap-2 hover:scale-105 hover:bg-cyan-300 hover:text-cyan-950 py-2.5 px-6 font-medium text-lg bg-cyan-600 text-white rounded-lg;
 }
+.btnWA {
+  @apply flex justify-center items-center border-none gap-2 hover:scale-105 hover:bg-green-300 hover:text-green-950 py-2.5 px-6 font-medium text-lg bg-green-600 text-white rounded-lg;
+}
+
+
 
 .heading {
   @apply lg:text-5xl text-4xl font-semibold text-cyan-600;

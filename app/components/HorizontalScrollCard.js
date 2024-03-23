@@ -34,7 +34,7 @@ const HorizontalScrollCard = ({ car }) => {
           <div className="text-sm flex justify-end items-center">
             {" "}
             {/* Flex container for fuel type */}
-            <span className="mr-1">{car.type}</span> {/* Type of fuel */}
+            <span className="mr-1">{car.fuelType}</span> {/* Type of fuel */}
             <FaGasPump /> {/* Gas Pump icon */}
           </div>
           <div className="font-bold text-cyan-800">₹ {car.price} lakhs</div>{" "}
