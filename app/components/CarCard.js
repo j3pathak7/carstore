@@ -12,7 +12,7 @@ const CarCard = ({ car }) => {
   });
   return (
     <div
-      className="p-4 bg-white rounded-2xl shadow-2xl shadow-teal-500 transform transition-transform hover:scale-105 h-full flex flex-col z-50"
+      className="p-4 bg-white rounded-2xl shadow-2xl shadow-teal-500 transform transition-transform hover:scale-105 h-full flex flex-col"
       data-aos="fade-up"
       data-aos-duration="1500"
     >
