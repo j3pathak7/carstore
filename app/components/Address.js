@@ -4,6 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { FaMapMarker, FaPhoneAlt } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
+import Link from "next/link";
 
 function Address() {
   useEffect(() => {
@@ -27,29 +28,29 @@ function Address() {
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">
               <FaPhoneAlt className="self-center text-cyan-800" />
               <div className="flex gap-2">
-                <a href="tel:+918135843184">8135843184</a>,
-                <a href="tel:+919706713213">9706713213</a>
+                <Link href="tel:+918135843184">8135843184</Link>,
+                <Link href="tel:+919706713213">9706713213</Link>
               </div>
             </div>
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">
               {" "}
               {/* Adjust text size for small devices */}
               <FaMapMarker className="self-center text-cyan-800" />
-              <a
+              <Link
                 href="https://maps.app.goo.gl/JTr2ENMLRrEURNL46"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GANESHPARA, AK Dev Rd, Guwahati, Assam 781025
-              </a>
+              </Link>
             </div>
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">
               {" "}
               {/* Adjust text size for small devices */}
               <AiFillMail className="self-center text-cyan-800" />
-              <a href="mailto:thecarstoreguwahati@gmail.com">
+              <Link href="mailto:thecarstoreguwahati@gmail.com">
                 thecarstoreguwahati@gmail.com
-              </a>
+              </Link>
             </div>
           </div>
         </div>

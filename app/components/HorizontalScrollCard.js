@@ -19,6 +19,7 @@ const HorizontalScrollCard = ({ car }) => {
           width={200} // Displaying the second image from the imageUrls array
           height={200}
           alt="Car"
+          loading="lazy"
           className="w-36 h-auto object-contain mr-4" // Setting width to 36px and allowing the image to contain within its container
         />
       )}
