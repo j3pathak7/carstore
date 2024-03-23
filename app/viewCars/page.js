@@ -6,9 +6,9 @@ const page = () => {
   return (
     <div>
       <div className="">
-        <Cars />
+        {/* <Cars /> */}
 
-        {/* <CarCards /> */}
+        <CarCards />
       </div>
     </div>
   );
