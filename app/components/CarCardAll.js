@@ -15,7 +15,7 @@ const Cars = () => {
   const [filteredTransmission, setFilteredTransmission] = useState(null);
   const [sortByPrice, setSortByPrice] = useState(null);
   const [pageNumber, setPageNumber] = useState(0);
-  const carsPerPage = 1;
+  const carsPerPage = 6;
 
   useEffect(() => {
     const fetchData = async () => {
