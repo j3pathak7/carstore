@@ -4,6 +4,7 @@ import { db } from "../../config/firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import CarCard from "@/app/components/CarCard";
 import Link from "next/link";
+import Message from "@/app/components/Message";
 
 const CarDetailsPage = ({ params }) => {
   const { brandId } = params;
@@ -53,14 +54,7 @@ const CarDetailsPage = ({ params }) => {
         <span className="text-cyan-900 py-8">Cars from</span> {brandId} Brand
       </h1>
       {notFound ? (
-        <div className="m-8 p-8 text-center">
-          <p className="text-red-500 text-md sm:text-2xl sm:my-8 sm:p-8">
-            No cars of this type found.
-          </p>
-          <Link className="btn w-56 md:w-80 my-8 mx-auto" href={"/viewCars"}>
-            View More Cars
-          </Link>
-        </div>
+        <Message />
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-8">
           {carList.map((car) => (

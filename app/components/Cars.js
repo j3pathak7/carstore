@@ -194,7 +194,7 @@ const Cars = () => {
           breakLabel="..."
           nextLabel=">"
           onPageChange={changePage}
-          pageRangeDisplayed={4}
+          pageRangeDisplayed={3}
           pageCount={pageCount}
           previousLabel="<"
           renderOnZeroPageCount={null}

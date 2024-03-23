@@ -11,6 +11,7 @@ import {
 } from "firebase/firestore";
 import CarCard from "@/app/components/CarCard";
 import Link from "next/link";
+import Message from "@/app/components/Message";
 
 const CarTypePage = ({ params }) => {
   const { carTypeId } = params;
@@ -80,14 +81,7 @@ const CarTypePage = ({ params }) => {
         <span className="text-teal-700 py-8">Cars of Type</span> {carTypeId}
       </h1>
       {notFound ? (
-        <div className="m-8 p-8">
-          <p className="text-center text-red-500 text-2xl m-8 p-8">
-            No cars of this type found.
-          </p>
-          <Link className="btn  w-56 md:w-80 mx-auto m-8" href={"/viewCars"}>
-            View More Cars
-          </Link>
-        </div>
+        <Message />
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-8">
           {carList.map((car) => (
