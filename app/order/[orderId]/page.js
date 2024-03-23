@@ -5,6 +5,7 @@ import { getDoc, doc, collection, addDoc } from "firebase/firestore";
 import { AiOutlineSend } from "react-icons/ai";
 import { FaSpinner } from "react-icons/fa";
 import { toast } from "react-toastify";
+import Image from "next/image";
 
 const ViewOrderId = ({ params }) => {
   const { orderId } = params;
@@ -90,9 +91,11 @@ const ViewOrderId = ({ params }) => {
         <div className="text-sm md:text-lg">
           <h1 className="heading py-8">Order Details</h1>
           <div className="flex items-center">
-            <img
+            <Image
               src={orderDetails.imageUrls[1]}
               alt="Car"
+              width={250}
+              height={250}
               className="w-20 h-auto mr-4 rounded-md"
             />
             <p>
