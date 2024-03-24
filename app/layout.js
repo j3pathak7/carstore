@@ -20,7 +20,8 @@ const roboto_mono = Roboto_Mono({
 
 export const metadata = {
   title: "the Car Store",
-  description: "Car Reseller in Guwahati",
+  description:
+    "Discover top-quality, affordable pre-owned cars at The Car Store Guwahati. Redefining pre-owned vehicles with next-to-new options at unbeatable prices. Experience premium quality without the hefty price tag. Visit us today!",
 };
 
 export default function RootLayout({ children }) {
