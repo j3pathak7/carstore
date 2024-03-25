@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
@@ -19,10 +20,10 @@ const SearchInput = () => {
   };
 
   return (
-    <div className=" p-2 flex items-center justify-between gap-2 bg-white rounded-full text-primary">
+    <div className=" py-2 px-4 flex items-center justify-between gap-2 bg-white rounded-full text-primary">
       <input
         type="text"
-        className="border border-white text-sm"
+        className=" text-sm no-outline"
         placeholder="Search"
         value={searchTerm}
         onChange={handleChange}

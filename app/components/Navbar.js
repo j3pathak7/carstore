@@ -61,7 +61,7 @@ function NavBar() {
       </div>
 
       <div
-        className={`block lg:hidden absolute right-0 top-10 ${sideBarWidth} h-screen overflow-y-hidden bg-cyan-950 duration-300 opacity-95`}
+        className={`block lg:hidden absolute right-0 top-10 ${sideBarWidth} h-screen overflow-y-hidden bg-gray-900 duration-300 opacity-95`}
       >
         <SmallNavBar closeSideBar={closeSideBar} />
       </div>

@@ -124,6 +124,10 @@
   @apply my-2 text-lg;
 }
 
+.no-outline {
+  outline: none;
+}
+
 .each-slide-effect>div {
   display: flex;
   align-items: center;
