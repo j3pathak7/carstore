@@ -21,14 +21,14 @@ function About() {
           <div className="lg:h-[25rem] flex flex-col lg:flex-row">
             <div className="lg:w-1/2 p-4 flex flex-col justify-center space-y-5 my-5">
               <h1
-                className="text-3xl font-semibold text-cyan-500"
+                className="text-4xl md:text-6xl text-gradient"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
                 About Us
               </h1>
               <p
-                className="leading-relaxed text-cyan-50 pr-8"
+                className="leading-relaxed text-dimWhite pr-8"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >

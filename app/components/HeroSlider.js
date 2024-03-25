@@ -64,12 +64,12 @@ const HeroSlider = () => {
                 }`}
               >
                 <div className="slider-content p-5 md:p-12">
-                  <h1 className="text-base md:text-lg md:font-semibold tracking-widest my-3 text-cyan-400">
+                  <h1 className="text-base md:text-lg  tracking-widest my-3 text-gradient">
                     {slide.heading}
                   </h1>
-                  <h1 className="text-4xl md:text-6xl font-semibold text-white">
+                  <h1 className="text-4xl md:text-6xl  text-white">
                     We Provide You{" "}
-                    <p className="text-cyan-400 font-bold">
+                    <p className="text-gradient font-bold">
                       {slide.subHeading}
                     </p>{" "}
                   </h1>

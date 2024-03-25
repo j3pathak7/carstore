@@ -103,8 +103,8 @@ const Cars = () => {
     <div>
       <Search />
       <div className="container mx-auto px-8">
-        <h1 className="pb-4 heading text-cyan-500 pt-2">
-          <span className="text-cyan-700">List of</span> Cars
+        <h1 className="pb-4 text-4xl md:text-6xl text-white pt-2">
+          List of <span className="text-gradient">Cars </span>
         </h1>
         <div className="md:flex justify-between items-center mb-4 md:h-10">
           <div className="flex">

@@ -64,9 +64,9 @@ const SearchResults = ({ params }) => {
 
   return (
     <div className="container mx-auto p-8 m-8">
-      <h1 className="text-center heading">
-        <span className="text-cyan-900 py-8">Search Results for: </span>
-        {searchId}
+      <h1 className="text-center text-4xl md:text-6xl text-white">
+        Search Results for:
+        <span className="text-gradient"> {searchId}</span>
       </h1>
       {notFound ? (
         <Message />

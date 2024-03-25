@@ -77,8 +77,9 @@ const CarTypePage = ({ params }) => {
 
   return (
     <div className="container mx-auto p-8 mb--8">
-      <h1 className="text-center heading">
-        <span className="text-teal-700 py-8">Cars of Type</span> {carTypeId}
+      <h1 className="text-center text-4xl md:text-6xl">
+        <span className="text-white py-8">Cars of Type</span>{" "}
+        <span className="text-gradient">{carTypeId}</span>
       </h1>
       {notFound ? (
         <Message />

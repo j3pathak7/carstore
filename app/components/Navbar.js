@@ -38,7 +38,7 @@ function NavBar() {
       <div className="self-center flex items-center">
         <Link
           href="/"
-          className="self-center text-lg lg:text-xl text-cyan-400"
+          className="self-center text-lg lg:text-xl text-gradient"
           style={{ textTransform: "uppercase" }}
         >
           <span style={{ fontSize: "1.5em" }}>T</span>

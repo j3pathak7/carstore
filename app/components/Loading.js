@@ -5,7 +5,7 @@ const Loading = () => {
   return (
     <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gradient-to-r from-cyan-950 to-black z-50">
       <div
-        className="self-center text-2xl lg:text-4xl text-cyan-400"
+        className="self-center text-2xl lg:text-4xl text-gradient"
         style={{ textTransform: "uppercase" }}
       >
         <span style={{ fontSize: "1.5em" }}>T</span>

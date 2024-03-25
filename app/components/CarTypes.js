@@ -28,11 +28,11 @@ const CarTypes = () => {
   return (
     <div>
       <h1
-        className="heading text-center m-8 p-8 "
+        className="text-4xl md:text-6xl text-center m-8 p-8 text-white "
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        Choose by Car Type:
+        Choose by Car <spanc className="text-gradient">Type:</spanc>
       </h1>
       <div
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8"

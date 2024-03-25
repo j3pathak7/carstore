@@ -32,11 +32,11 @@ const Brands = () => {
   return (
     <div data-aos="fade-dowp" data-aos-duration="2000">
       <h1
-        className="heading text-center m-8 p-8 text-cyan-700"
+        className="text-4xl md:text-6xl text-center m-8 p-8 text-white"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        Choose by <span className="text-cyan-500">Brand:</span>
+        Choose by <span className="text-gradient">Brand:</span>
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8 ">
         {visibleBrands.map((brand, index) => (

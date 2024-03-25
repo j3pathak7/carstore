@@ -20,9 +20,9 @@ function Address() {
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          <h1 className="heading">
-            <span className="text-cyan-800">Where</span> to{" "}
-            <span className="text-cyan-800"> Find</span> Us
+          <h1 className="text-4xl md:text-6xl">
+            <span className="text-white">Where to</span>
+            <span className="text-gradient"> Find Us</span>
           </h1>
           <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-cyan-500  justify-center space-y-5 bg-white">
             <div className="flex gap-4 text-sm md:text-base lg:text-lg">

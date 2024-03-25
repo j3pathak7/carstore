@@ -30,8 +30,8 @@ const CarsHorizontalScroll = () => {
 
   return (
     <div className="text-center lg:mx-36">
-      <h2 className="m-8 heading text-cyan-600">
-        Featured <span className="text-cyan-500">Cars</span>
+      <h2 className="m-8 text-4xl md:text-6xl text-white">
+        Featured <span className="text-gradient">Cars</span>
       </h2>
       <div className="flex overflow-x-auto p-4 space-x-4 hide-scrollbar">
         {carList === null ? (

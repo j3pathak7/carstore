@@ -47,17 +47,17 @@ function ContactUs() {
 
   return (
     <div className=" m-8">
-      <h1 className="text-center heading text-cyan-700">
-        <span className="text-cyan-500 py-8">Contact</span> Us
+      <h1 className="text-center text-4xl md:text-6xl text-white">
+        <span className="text-gradient py-8">Contact</span> Us
       </h1>
       <div className="flex flex-col lg:flex-row py-5">
         <div className="lg:w-1/2 lg:p-10">
           <div className="mb-8 lg:mb-0">
-            <h1 className="heading">
-              <span className="text-cyan-700">Where</span> to{" "}
-              <span className="text-cyan-500"> Find</span> Us
+            <h1 className="text-4xl md:text-6xl text-white">
+              Where to
+              <span className="text-gradient"> Find</span> Us
             </h1>
-            <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-slate-700 justify-center space-y-5 bg-white text-sm md:text-md">
+            <div className="mx-auto py-10 px-5 my-10 shadow-2xl rounded-2xl shadow-cyan-500 justify-center space-y-5 bg-white text-sm md:text-md">
               <div className="flex gap-4 text-sm md:text-base ">
                 <FaPhoneAlt className="self-center text-cyan-800" />
                 <div className="flex gap-2">
@@ -86,10 +86,10 @@ function ContactUs() {
         </div>
         <div className="lg:w-1/2 lg:p-10">
           <div className="space-y-2">
-            <h1 className="subheading text-cyan-700">
-              Get in <span className="text-cyan-500">touch</span>
+            <h1 className="text-4xl md:text-6xl text-white">
+              Get in <span className="text-gradient">touch</span>
             </h1>
-            <p className="text-cyan-50">
+            <p className=" text-dimWhite">
               Feel free to reach out to us for any inquiries or assistance. We
               value your input and are here to help.
             </p>

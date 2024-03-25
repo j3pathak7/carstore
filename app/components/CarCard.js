@@ -12,11 +12,7 @@ const CarCard = ({ car }) => {
     Aos.init();
   });
   return (
-    <div
-      className="p-4 bg-white rounded-2xl shadow-2xl shadow-teal-500 transform transition-transform hover:scale-105 h-full flex flex-col text-cyan-800"
-      data-aos="fade-up"
-      data-aos-duration="1500"
-    >
+    <div className="p-4 bg-white rounded-2xl shadow-2xl shadow-teal-500 transform transition-transform hover:scale-105 h-full flex flex-col text-cyan-800">
       <div>
         {/* Image div starts */}
         {car.imageUrls && car.imageUrls.length > 0 && (

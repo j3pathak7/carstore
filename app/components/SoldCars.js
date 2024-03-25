@@ -71,11 +71,11 @@ const SoldCars = () => {
       data-aos-duration="2000"
     >
       <h1
-        className="heading pt-4 px-6 text-cyan-700"
+        className="text-4xl md:text-6xl pt-4 px-6 text-white"
         data-aos="fade-up"
         data-aos-duration="500"
       >
-        Our <span className="text-cyan-500">Sold</span> Cars
+        Our <span className="text-cyan-500">Sold Cars</span>
       </h1>
 
       <div

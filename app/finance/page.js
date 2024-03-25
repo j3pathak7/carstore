@@ -40,8 +40,9 @@ const Banks = () => {
 
   return (
     <div data-aos="fade-up" data-aos-duration="2000">
-      <h1 className="heading text-center m-8 sm:m-16 p-8">
-        We provide the following financing options
+      <h1 className="text-4xl md:text-6xl text-white text-center m-8 sm:m-16 p-8">
+        We provide the following{" "}
+        <span className="text-gradient">Financing </span>options:
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mx-2 sm:mx-10 md:mx-20 lg:mx-40 m-8 ">
         {visibleBanks.map((bank) => (

@@ -42,10 +42,10 @@ function Reviews() {
   return (
     <div className="mt-32 mb-64  mx-4 md:mx-32">
       <div className=" p-4 space-y-2 mb-8">
-        <h1 className="heading">
-          Our <span className="text-cyan-500">Reviews</span>
+        <h1 className="text-4xl md:text-6xl text-white">
+          Our <span className="text-gradient">Reviews</span>
         </h1>
-        <p className="desc text-cyan-50">What people say about us:</p>
+        <p className="desc text-dimWhite">What people say about us:</p>
       </div>
 
       <div
@@ -53,7 +53,7 @@ function Reviews() {
         data-aos="flip-right"
         data-aos-duration="3000"
       >
-        <div className="bg-white rounded-lg shadow-2xl p-6">
+        <div className="bg-white rounded-lg shadow-2xl p-6 shadow-2xl shadow-cyan-500">
           <h1 className="text-cyan-700 font-semibold text-2xl  lg:text-4xl mb-4">
             {currentReview.name}
           </h1>

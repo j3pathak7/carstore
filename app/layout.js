@@ -28,7 +28,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable}`}>
-        <div className="bg-gradient-to-r from-cyan-950 to-black">
+        <div className="bg-gradient-to-r from-gray-900 to-black">
+          {/* <div className="bg-gray-900"> */}
           <Navbar />
           {children}
           <div className="mt-32">
