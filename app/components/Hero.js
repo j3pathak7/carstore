@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className=" bg-cover bg-no-repeat bg-center py-10 md:py-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mx-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mx-8 md:mx-16">
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-5xl text-white leading-tight">
               Find Your <span className="text-gradient">Perfect Car</span>
