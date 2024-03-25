@@ -33,9 +33,10 @@ const Search = () => {
             alt="Car Image"
             layout="fill"
             objectFit="cover"
-            priority
+            loading="lazy"
           />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
+          <div className="absolute inset-0 opacity-50"></div>
         </div>
         <div className="relative z-10 flex justify-center items-center h-full px-6 py-6">
           <form onSubmit={handleSubmit} className="max-w-2xl w-full">

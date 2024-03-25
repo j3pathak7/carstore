@@ -19,7 +19,7 @@ function SmallNavBar({ closeSideBar }) {
           onClick={closeSideBar}
           className="hover:scale-105 duration-150 flex items-center gap-2"
         >
-          <FaCar className="self-center text-cyan-500" /> View Cars
+          <FaCar className="self-center text-cyan-500" /> Inventory
         </Link>
       </li>
       <li>
@@ -28,7 +28,7 @@ function SmallNavBar({ closeSideBar }) {
           onClick={closeSideBar}
           className="hover:scale-105 duration-150 flex items-center gap-2"
         >
-          <AiOutlineInfoCircle className="self-center text-cyan-500" /> About us
+          <AiOutlineInfoCircle className="self-center text-cyan-500" /> About
         </Link>
       </li>
       <li>
@@ -46,8 +46,7 @@ function SmallNavBar({ closeSideBar }) {
           onClick={closeSideBar}
           className="hover:scale-105 duration-150 flex items-center gap-2"
         >
-          <FaMoneyBill1Wave className="self-center text-cyan-500" /> Financing
-          Options
+          <FaMoneyBill1Wave className="self-center text-cyan-500" /> Finance
         </Link>
       </li>
       <li>

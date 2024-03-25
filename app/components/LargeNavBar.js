@@ -8,13 +8,14 @@ import SearchInput from "./SearchInput"; // Import the SearchInput component
 
 function LargeNavBar() {
   return (
-    <ul className="hidden self-center lg:flex items-center space-x-8 [&>*]:p-1">
+    <ul className="hidden self-center lg:flex items-center space-x-4 [&>*]:p-1">
       <li>
         <Link
           href="/viewCars"
           className="hover:scale-105 duration-150 flex items-center gap-2"
         >
-          <FaCar className="self-center text-cyan-500" /> View Cars
+          <FaCar className="self-center text-cyan-500" />
+          Inventory
         </Link>
       </li>
       <li>
@@ -22,7 +23,7 @@ function LargeNavBar() {
           href="/about"
           className="hover:scale-105 duration-150 flex items-center gap-2"
         >
-          <AiOutlineInfoCircle className="self-center text-cyan-500" /> About us
+          <AiOutlineInfoCircle className="self-center text-cyan-500" /> About
         </Link>
       </li>
       <li>
@@ -38,8 +39,7 @@ function LargeNavBar() {
           href="/finance"
           className="hover:scale-105 duration-150 flex items-center gap-2"
         >
-          <FaMoneyBill1Wave className="self-center text-cyan-500" /> Financing
-          Options
+          <FaMoneyBill1Wave className="self-center text-cyan-500" /> Finance
         </Link>
       </li>
       <li>

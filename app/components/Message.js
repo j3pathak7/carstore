@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Message = ({ resetFilters }) => {
@@ -7,9 +8,9 @@ const Message = ({ resetFilters }) => {
         Apologies, but no cars of that type were found in our inventory.
       </p>
       <div className="flex justify-center m-8">
-        <button className="btn" href="/viewCars">
+        <Link className="btn" href="/viewCars">
           View More Cars
-        </button>
+        </Link>
       </div>
     </div>
   );
