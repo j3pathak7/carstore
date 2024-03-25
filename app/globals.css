@@ -40,7 +40,7 @@
 }
 
 .btn {
-  @apply flex border-none gap-2 hover:scale-105 hover:bg-cyan-300 hover:text-cyan-950 py-2.5 px-6 font-medium text-lg bg-cyan-600 text-white rounded-lg;
+  @apply flex border-none gap-2 hover:scale-105 hover:bg-cyan-300 hover:text-cyan-950 py-2.5 px-6 font-medium text-lg bg-cyan-600 text-white rounded-full;
 }
 .btnWA {
   @apply flex justify-center items-center border-none gap-2 hover:scale-105 hover:bg-green-300 hover:text-green-950 py-2.5 px-6 font-medium text-lg bg-green-600 text-white rounded-lg;
