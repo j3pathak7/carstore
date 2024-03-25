@@ -21,11 +21,11 @@ export default function Home() {
         <Hero />
         {/* <div className=" my-8 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-cyan-500">
           <Image
-            src="/logo.png"
-            width={200}
-            height={200}
-            alt="Picture of the author"
-            loading="lazy"
+          src="/logo.png"
+          width={200}
+          height={200}
+          alt="Picture of the author"
+          loading="lazy"
           />
         </div> */}
         <div>
