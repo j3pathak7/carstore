@@ -20,7 +20,7 @@ const SearchInput = () => {
   };
 
   return (
-    <div className=" py-2 px-4 flex items-center justify-between gap-2 bg-white rounded-full text-primary">
+    <div className=" py-2 px-4 flex items-center justify-between  bg-white rounded-full text-primary">
       <input
         type="text"
         className=" text-sm no-outline"

@@ -15,11 +15,11 @@ export default function Home() {
         {/* gradient start */}
         {/* <div className="absolute z-[0] w-[20%] h-[25%] top-60 pink__gradient" /> */}
         {/* <div className="absolute z-[1] w-[20%] h-[20%] rounded-full white__gradient bottom-40" /> */}
-        <div className="absolute z-[0] w-[20%] h-[40%] left-80 bottom-60 blue__gradient" />
+        <div className="absolute z-[0] w-[20%] h-[40%] left-40 bottom-60 blue__gradient" />
         {/* gradient end */}
         <Search />
-        {/* <Hero /> */}
-        <div className=" my-8 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-cyan-500">
+        <Hero />
+        {/* <div className=" my-8 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-cyan-500">
           <Image
             src="/logo.png"
             width={200}
@@ -27,7 +27,7 @@ export default function Home() {
             alt="Picture of the author"
             loading="lazy"
           />
-        </div>
+        </div> */}
         <div>
           <CarsHorizontalScroll />
         </div>
