@@ -1,5 +1,3 @@
-// Hero.jsx
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,9 +13,11 @@ const Hero = () => {
             <p className="text-gray-300 text-xl mt-4">
               Huge selection, great prices, hassle-free buying.
             </p>
-            <Link href={"/viewCars"}>
-              <button className="btn btn-primary mt-8">Browse Inventory</button>
-            </Link>
+            <div className="flex justify-center md:justify-start">
+              <Link href={"/viewCars"}>
+                <button className="btn btn-primary mt-8">Browse Cars</button>
+              </Link>
+            </div>
           </div>
           <div className=" my-8 rounded-2xl w-40 md:w-80 flex justify-center mx-auto p-8 bg-white shadow-2xl shadow-cyan-500">
             <Image
