@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaCar } from "react-icons/fa";
+import { FaCarSide } from "react-icons/fa";
 import { AiOutlineInfoCircle, AiOutlinePhone } from "react-icons/ai";
 import { FaMoneyBill1Wave } from "react-icons/fa6";
 import { AiOutlineStar } from "react-icons/ai";
@@ -14,7 +14,7 @@ function LargeNavBar() {
           href="/viewCars"
           className="hover:scale-105 duration-150 flex items-center gap-2"
         >
-          <FaCar className="self-center text-cyan-500" />
+          <FaCarSide className="self-center text-cyan-500" />
           Inventory
         </Link>
       </li>
