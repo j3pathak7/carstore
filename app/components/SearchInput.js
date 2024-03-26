@@ -23,7 +23,7 @@ const SearchInput = () => {
     <div className=" py-2 px-4 flex items-center justify-between  bg-white rounded-full text-primary">
       <input
         type="text"
-        className=" text-sm no-outline"
+        className=" text-sm no-outline w-full"
         placeholder="Search"
         value={searchTerm}
         onChange={handleChange}
