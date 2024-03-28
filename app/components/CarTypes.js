@@ -9,9 +9,10 @@ const CarTypes = () => {
   const [showAllTypes, setShowAllTypes] = useState(false);
 
   const carTypes = [
-    { id: "sedan", name: "Sedan", alt: "Sedan Car" },
     { id: "hatchback", name: "Hatchback", alt: "Hatchback Car" },
     { id: "suv", name: "SUV", alt: "SUV Car" },
+    { id: "sedan", name: "Sedan", alt: "Sedan Car" },
+    { id: "muv", name: "MUV", alt: "MUV Car" },
     { id: "crossover", name: "Crossover", alt: "Crossover Car" },
     { id: "convertible", name: "Convertible", alt: "Convertible Car" },
     { id: "coupe", name: "Coupe", alt: "Coupe Car" },
