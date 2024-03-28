@@ -17,7 +17,7 @@ const Brands = () => {
     { id: "volkswagen", name: "Volkswagen", alt: "Volkswagen Logo" },
     { id: "chevrolet", name: "Chevrolet", alt: "Chevrolet Logo" },
     { id: "kia", name: "Kia", alt: "Kia Logo" },
-    { id: "mercedes", name: "Mercedes", alt: "Mercedes Logo" },
+    { id: "mercedes", name: "Mercedes-Benz", alt: "Mercedes Logo" },
     { id: "renault", name: "Renault", alt: "Renault Logo" },
     { id: "toyota", name: "Toyota", alt: "Toyota Logo" },
     { id: "bmw", name: "BMW", alt: "BMW Logo" },
